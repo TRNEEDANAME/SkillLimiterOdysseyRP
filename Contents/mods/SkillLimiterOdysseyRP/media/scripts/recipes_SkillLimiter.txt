@@ -1,0 +1,290 @@
+module Base
+{
+    recipe Write Sprinting XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_SprintingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Sprinting=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Lightfooted XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_LightfootedXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Lightfoot=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Nimble XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_NimbleXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Nimble=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Sneaking XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_SneakingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Sneak=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Axe XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_AxeXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Woodcutting=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Long Blunt XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_LongBluntXPMag,
+        RemoveResultItem:true,
+        SkillRequired:LongBlunt=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Short Blunt XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_ShortBluntXPMag,
+        RemoveResultItem:true,
+        SkillRequired:SmallBlunt=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Long Blade XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_LongBladeXPMag,
+        RemoveResultItem:true,
+        SkillRequired:LongBlade=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Short Blade XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_ShortBladeXPMag,
+        RemoveResultItem:true,
+        SkillRequired:SmallBlade=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Spear XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_SpearXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Spear=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Maintenance XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_MaintenanceXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Maintenance=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Carpentry XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_CarpentryXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Carpentry=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Cooking XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_CookingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Cooking=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Farming XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_FarmingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Farming=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write First Aid XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_FirstAidXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Doctor=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Electricity XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_ElectricalXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Electricity=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Metal Working XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_MetalWorkingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:MetalWelding=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Tailoring XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_TailoringXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Tailoring=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Aiming XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_AimingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Aiming=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Reloading XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_ReloadingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Reloading=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Fishing XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_FishingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Fishing=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Trapping XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_TrappingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Trapping=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Foraging XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_ForagingXPMag,
+        RemoveResultItem:true,
+        SkillRequired:PlantScavenging=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+
+    recipe Write Mechanics XP Book
+    {
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_MechanicXPMag,
+        RemoveResultItem:true,
+        SkillRequired:Mechanics=10,
+
+        Time:50.0,
+        StopOnWalk:false,
+    }
+}

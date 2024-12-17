@@ -1,0 +1,310 @@
+module Base
+{
+	imports
+	{
+		Base
+	}
+
+	item TR_SprintingXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = A sprinting guide, by Oliver,
+		Icon             = NutritionistMag,
+		TeachedRecipes   = TR_SprintingXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMNutritionist_Ground,
+	}
+		
+	item TR_LightfootedXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = Go fast, go silently,
+		Icon             = OrganizedMag,
+		TeachedRecipes   = TR_LightfootedXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMOrganized_Ground,
+	}
+	
+	item TR_NimbleXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = How to be quick on your feet,
+		Icon             = SpeedDemonMag,
+		TeachedRecipes   = TR_NimbleXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMSpeedDemon_Ground,
+	}
+	
+	item TR_SneakingXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = A sneaky as a snake,
+		Icon             = OutdoorsmanMag,
+		TeachedRecipes   = TR_SneakingXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMOutdoorsman_Ground,
+	}
+	
+	item TR_AxeXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = Get axed,
+		Icon             = HandyMag,
+		TeachedRecipes   = TR_AxeXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMHandy_Ground,
+	}
+	
+	item TR_LongBluntXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = How to be a good baseball player,
+		Icon             = FastReaderMag,
+		TeachedRecipes   = TR_LongBluntXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMFastReader_Ground,
+	}
+	
+	item TR_ShortBluntXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = How to hammer your point,
+		Icon             = FastLearnerMag,
+		TeachedRecipes   = TR_ShortBluntXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMFastLearner_Ground,
+	}
+	
+	item TR_LongBladeXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = Use a machete like never before,
+		Icon             = AxeManMag,
+		TeachedRecipes   = TR_LongBladeXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMAxeMan_Ground,
+	}
+	
+	item TR_ShortBladeXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = How to become british,
+		Icon             = BurglarMag,
+		TeachedRecipes   = TR_ShortBladeXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMBurglar_Ground,
+	}
+
+	item TR_SpearXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = Reject society, go back to caveman,
+		Icon             = GracefulMag,
+		TeachedRecipes   = TR_SpearXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMGraceful_Ground,
+	}
+
+	item TR_MaintenanceXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = How to maintain everything, except relationship,
+		Icon             = DextrousMag,
+		TeachedRecipes   = TR_MaintenanceXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMDextrous_Ground,
+	}
+	
+	item TR_CarpentryXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = Be as cool as Woodcut,
+		Icon             = InconspicuousMag,
+		TeachedRecipes   = TR_CarpentryXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMInconspicuous_Ground,
+	}
+
+	item TR_CookingXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = How to make food that's actually good,
+		Icon             = KeenHearingMag,
+		TeachedRecipes   = TR_CookingXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMKeenHearing_Ground,
+	}
+
+    item TR_FarmingXPMag 
+    {
+        		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = How to become a man of honest work,
+		Icon             = KeenHearingMag,
+		TeachedRecipes   = TR_FarmingXP,
+		StaticModel      = Magazine,
+		WorldStaticModel = GTMKeenHearing_Ground,
+    }
+
+    item TR_FirstAidXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Become a surgeon,
+        Icon = mag,
+        TeachedRecipes = TR_FirstAidXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_ElectricalXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Conquer light,
+        Icon = mag,
+        TeachedRecipes = TR_ElectricalXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_MetalWorkingXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = How to use a blowtorch without burning yourself,
+        Icon = mag,
+        TeachedRecipes = TR_MetalWorkingXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_TailoringXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Everyone need clothes,
+        Icon = mag,
+        TeachedRecipes = TR_TailoringXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_AimingXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Become a cop in a day (sponsored by the KPD),
+        Icon = mag,
+        TeachedRecipes = TR_AimingXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_ReloadingXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Become a cop in a day  Part 2(sponsored by the KPD),
+        Icon = mag,
+        TeachedRecipes = TR_ReloadingXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_FishingXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Catch everything,
+        Icon = mag,
+        TeachedRecipes = TR_FishingXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_TrappingXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Trap everything,
+        Icon = mag,
+        TeachedRecipes = TR_TrappingXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_ForagingXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Find everything,
+        Icon = mag,
+        TeachedRecipes = TR_ForagingXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+    item TR_MechanicXPMag
+    {
+        NumberOfPages = 220,
+        DisplayCategory = SkillBook,
+        Weight = 0.1,
+        Type = Literature,
+        DisplayName = Repair cars, only to destroy them,
+        Icon = mag,
+        TeachedRecipes = TR_MechanicXP,
+        StaticModel = Magazine,
+        WorldStaticModel = Magazine_Ground,
+    }
+}

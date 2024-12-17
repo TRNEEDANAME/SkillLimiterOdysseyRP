@@ -1,0 +1,19 @@
+VERSION = 1,
+
+option Doctrine.ForcedPerks
+{
+	type = string,
+	default = Delimit the list with semicolons,
+
+	page = Doctrine,
+	translation = Doctrine_ForcedPerks,
+}
+
+option Doctrine.DisabledPerks
+{
+	type = string,
+	default = Delimit the list with semicolons,
+
+	page = Doctrine,
+	translation = Doctrine_DisabledPerks,
+}
