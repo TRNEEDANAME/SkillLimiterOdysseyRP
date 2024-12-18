@@ -9,6 +9,15 @@ option Doctrine.ForcedPerks
 	translation = Doctrine_ForcedPerks,
 }
 
+option SkillLimiterOdysseyRP.EnableSprint
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = HuntingMod_YearsLater,
+}
+
+
     SkillLimiterOdysseyRP.EnableSprint = true,  -- Sprinting
     SkillLimiterOdysseyRP.EnableLightfoot = true,  -- Lightfooted
     SkillLimiterOdysseyRP.EnableNimble = true,  -- Nimble
