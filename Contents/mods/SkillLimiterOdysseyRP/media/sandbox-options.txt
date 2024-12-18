@@ -9,7 +9,32 @@ option Doctrine.ForcedPerks
 	translation = Doctrine_ForcedPerks,
 }
 
-option Doctrine.DisabledPerks
+    SkillLimiterOdysseyRP.EnableSprint = true,  -- Sprinting
+    SkillLimiterOdysseyRP.EnableLightfoot = true,  -- Lightfooted
+    SkillLimiterOdysseyRP.EnableNimble = true,  -- Nimble
+    SkillLimiterOdysseyRP.EnableSneak = true,  -- Sneaking
+    SkillLimiterOdysseyRP.EnableAxe = true,  -- Axe
+    SkillLimiterOdysseyRP.EnableLongblunt = true,  -- Long Blunt
+    SkillLimiterOdysseyRP.EnableShortblunt = true,  -- Short Blunt
+    SkillLimiterOdysseyRP.EnableLongblade = true,  -- Long Blade
+    SkillLimiterOdysseyRP.EnableShortblade = true,  -- Short Blade
+    SkillLimiterOdysseyRP.EnableSpear = true,  -- Spear
+    SkillLimiterOdysseyRP.EnableMaintenance = true,  -- Maintenance
+    SkillLimiterOdysseyRP.EnableCarpenry = true,  -- Carpentry
+    SkillLimiterOdysseyRP.EnableCook = true,  -- Cooking
+    SkillLimiterOdysseyRP.EnableFarm = true,  -- Farming
+    SkillLimiterOdysseyRP.EnableFirstaid = true,  -- First Aid
+    SkillLimiterOdysseyRP.EnableElectrical = true,  -- Electrical
+    SkillLimiterOdysseyRP.EnableMetalwork = true,  -- Metal Working
+    SkillLimiterOdysseyRP.EnableTailor = true,  -- Tailoring
+    SkillLimiterOdysseyRP.EnableAim = true,  -- Aiming
+    SkillLimiterOdysseyRP.EnableReload = true,  -- Reloading
+    SkillLimiterOdysseyRP.EnableFish = true,  -- Fishing
+    SkillLimiterOdysseyRP.EnableTrap = true,  -- Trapping
+    SkillLimiterOdysseyRP.EnableForage = true,  -- Foraging
+	SkillLimiterOdysseyRP.EnableMechanic = true,  -- Mechanic
+
+Doctrine.DisabledPerks
 {
 	type = string,
 	default = Delimit the list with semicolons,

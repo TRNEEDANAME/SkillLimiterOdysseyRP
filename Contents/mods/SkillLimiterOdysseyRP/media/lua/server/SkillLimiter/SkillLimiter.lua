@@ -36,31 +36,32 @@ SkillLimiterOdysseyRP.skillLimitingTraits = {
     SandboxVars.SkillLimiterOdysseyRP.MechanicLimitingTrait,
 }
 
+--- Booleans that activate or not the limiter for the skill
 SkillLimiterOdysseyRP.skillCheckEnabled = {
-    true,  -- Sprinting
-    true,  -- Lightfooted
-    true,  -- Nimble
-    true,  -- Sneaking
-    false,  -- Axe
-    false,  -- Long Blunt
-    false,  -- Short Blunt
-    false,  -- Long Blade
-    false,  -- Short Blade
-    false,  -- Spear
-    true,  -- Maintenance
-    true,  -- Carpentry
-    true,  -- Cooking
-    true,  -- Farming
-    true,  -- First Aid
-    true,  -- Electrical
-    true,  -- Metal Working
-    true,  -- Tailoring
-    true,  -- Aiming
-    true,  -- Reloading
-    true,  -- Fishing
-    true,  -- Trapping
-    true,  -- Foraging
-    true,  -- Mechanic
+    SandboxVars.SkillLimiterOdysseyRP.EnableSprint,  -- Sprinting
+    SandboxVars.SkillLimiterOdysseyRP.EnableLightfoot,  -- Lightfooted
+    SandboxVars.SkillLimiterOdysseyRP.EnableNimble,  -- Nimble
+    SandboxVars.SkillLimiterOdysseyRP.EnableSneak,  -- Sneaking
+    SandboxVars.SkillLimiterOdysseyRP.EnableAxe,  -- Axe
+    SandboxVars.SkillLimiterOdysseyRP.EnableLongblunt,  -- Long Blunt
+    SandboxVars.SkillLimiterOdysseyRP.EnableShortblunt,  -- Short Blunt
+    SandboxVars.SkillLimiterOdysseyRP.EnableLongblade,  -- Long Blade
+    SandboxVars.SkillLimiterOdysseyRP.EnableShortblade,  -- Short Blade
+    SandboxVars.SkillLimiterOdysseyRP.EnableSpear,  -- Spear
+    SandboxVars.SkillLimiterOdysseyRP.EnableMaintenance,  -- Maintenance
+    SandboxVars.SkillLimiterOdysseyRP.EnableCarpenry,  -- Carpentry
+    SandboxVars.SkillLimiterOdysseyRP.EnableCook,  -- Cooking
+    SandboxVars.SkillLimiterOdysseyRP.EnableFarm,  -- Farming
+    SandboxVars.SkillLimiterOdysseyRP.EnableFirstaid,  -- First Aid
+    SandboxVars.SkillLimiterOdysseyRP.EnableElectrical,  -- Electrical
+    SandboxVars.SkillLimiterOdysseyRP.EnableMetalwork,  -- Metal Working
+    SandboxVars.SkillLimiterOdysseyRP.EnableTailor,  -- Tailoring
+    SandboxVars.SkillLimiterOdysseyRP.EnableAim,  -- Aiming
+    SandboxVars.SkillLimiterOdysseyRP.EnableReload,  -- Reloading
+    SandboxVars.SkillLimiterOdysseyRP.EnableFish,  -- Fishing
+    SandboxVars.SkillLimiterOdysseyRP.EnableTrap,  -- Trapping
+    SandboxVars.SkillLimiterOdysseyRP.EnableForage,  -- Foraging
+    SandboxVars.SkillLimiterOdysseyRP.EnableMechanic,  -- Mechanic
 }
 
 --- They give +2 upon being gained
