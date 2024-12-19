@@ -1,5 +1,288 @@
 VERSION = 1,
 
+option SkillLimiterOdysseyRP.SprintingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableSprintLimit,
+}
+
+option SkillLimiterOdysseyRP.LightfootedLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableLightfootLimit,
+}
+
+option SkillLimiterOdysseyRP.NimbleLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableNimbleLimit,
+}
+
+option SkillLimiterOdysseyRP.SneakingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableSneakingLimit,
+}
+
+option SkillLimiterOdysseyRP.AxeLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableAxeLimit,
+}
+
+option SkillLimiterOdysseyRP.LongBluntLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableLongBluntLimit,
+}
+
+option SkillLimiterOdysseyRP.ShortBluntLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableShortBluntLimit,
+}
+
+option SkillLimiterOdysseyRP.LongBladeLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableLongBladeLimit,
+}
+
+option SkillLimiterOdysseyRP.ShortBladeLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableShortBladeLimit,
+}
+
+option SkillLimiterOdysseyRP.SpearLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableSpearLimit,
+}
+
+option SkillLimiterOdysseyRP.MaintenanceLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableMaintenanceLimit,
+}
+
+option SkillLimiterOdysseyRP.CarpentryLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableCarpentryLimit,
+}
+
+option SkillLimiterOdysseyRP.CookingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableCookingLimi,
+}
+
+option SkillLimiterOdysseyRP.FarmingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableFarmingLimit,
+}
+
+option SkillLimiterOdysseyRP.FirstAidLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableFirstAidLimit,
+}
+
+option SkillLimiterOdysseyRP.ElectricalLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableElectricalLimit,
+}
+
+option SkillLimiterOdysseyRP.MetalWorkingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableMetalWorkingLimit,
+}
+
+option SkillLimiterOdysseyRP.TailoringLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableTailoringLimit,
+}
+
+option SkillLimiterOdysseyRP.AimingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableAimingLimit,
+}
+
+option SkillLimiterOdysseyRP.ReloadingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableReloadingLimit,
+}
+
+option SkillLimiterOdysseyRP.FishingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableFishingLimit,
+}
+
+option SkillLimiterOdysseyRP.TrappingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableTrappingLimit,
+}
+
+option SkillLimiterOdysseyRP.ForagingLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableForagingLimit,
+}
+
+option SkillLimiterOdysseyRP.MechanicLimitingTrait
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableMechanicLimit,
+}
+
+
+
+
+option SkillLimiterOdysseyRP.PerkLvl0Cap
+{
+    type = integer,
+    default = 4,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl0Cap
+}
+
+option SkillLimiterOdysseyRP.PerkLvl1Cap
+{
+    type = integer,
+    default = 5,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl1Cap
+}
+
+option SkillLimiterOdysseyRP.PerkLvl2Cap
+{
+    type = integer,
+    default = 8,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl2Cap
+}
+
+option SkillLimiterOdysseyRP.PerkLvl3Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl3Cap
+}
+
+option SkillLimiterOdysseyRP.PerkLvl4Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl4Cap,
+}
+
+option SkillLimiterOdysseyRP.PerkLvl5Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl5Cap,
+}
+
+option SkillLimiterOdysseyRP.PerkLvl6Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl6Cap,
+}
+
+option SkillLimiterOdysseyRP.PerkLvl7Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl7Cap,
+}
+
+option SkillLimiterOdysseyRP.PerkLvl8Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl8Cap,
+}
+
+option SkillLimiterOdysseyRP.PerkLvl9Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl9Cap,
+}
+
+option SkillLimiterOdysseyRP.PerkLvl10Cap
+{
+    type = integer,
+    default = 10,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_PerkLvl10Cap,
+}
+
 option Doctrine.ForcedPerks
 {
 	type = string,
@@ -9,45 +292,194 @@ option Doctrine.ForcedPerks
 	translation = Doctrine_ForcedPerks,
 }
 
-option SkillLimiterOdysseyRP.EnableSprint
+option SkillLimiterOdysseyRP.SprintingLimitingTrait
 {
-    type = boolean,
-    default = true,
+    type = string,
+    default = Delimit the list with semicolons,
     page = SkillLimiterOdysseyRP,
-    translation = HuntingMod_YearsLater,
+    translation = SkillLimiterOdysseyRP_SprintingLimitingTraitList,
 }
 
-
-    SkillLimiterOdysseyRP.EnableSprint = true,  -- Sprinting
-    SkillLimiterOdysseyRP.EnableLightfoot = true,  -- Lightfooted
-    SkillLimiterOdysseyRP.EnableNimble = true,  -- Nimble
-    SkillLimiterOdysseyRP.EnableSneak = true,  -- Sneaking
-    SkillLimiterOdysseyRP.EnableAxe = true,  -- Axe
-    SkillLimiterOdysseyRP.EnableLongblunt = true,  -- Long Blunt
-    SkillLimiterOdysseyRP.EnableShortblunt = true,  -- Short Blunt
-    SkillLimiterOdysseyRP.EnableLongblade = true,  -- Long Blade
-    SkillLimiterOdysseyRP.EnableShortblade = true,  -- Short Blade
-    SkillLimiterOdysseyRP.EnableSpear = true,  -- Spear
-    SkillLimiterOdysseyRP.EnableMaintenance = true,  -- Maintenance
-    SkillLimiterOdysseyRP.EnableCarpenry = true,  -- Carpentry
-    SkillLimiterOdysseyRP.EnableCook = true,  -- Cooking
-    SkillLimiterOdysseyRP.EnableFarm = true,  -- Farming
-    SkillLimiterOdysseyRP.EnableFirstaid = true,  -- First Aid
-    SkillLimiterOdysseyRP.EnableElectrical = true,  -- Electrical
-    SkillLimiterOdysseyRP.EnableMetalwork = true,  -- Metal Working
-    SkillLimiterOdysseyRP.EnableTailor = true,  -- Tailoring
-    SkillLimiterOdysseyRP.EnableAim = true,  -- Aiming
-    SkillLimiterOdysseyRP.EnableReload = true,  -- Reloading
-    SkillLimiterOdysseyRP.EnableFish = true,  -- Fishing
-    SkillLimiterOdysseyRP.EnableTrap = true,  -- Trapping
-    SkillLimiterOdysseyRP.EnableForage = true,  -- Foraging
-	SkillLimiterOdysseyRP.EnableMechanic = true,  -- Mechanic
-
-Doctrine.DisabledPerks
+option SkillLimiterOdysseyRP.LightfootedLimitingTrait
 {
-	type = string,
-	default = Delimit the list with semicolons,
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_LightfootedLimitingTraitList,
+}
 
-	page = Doctrine,
-	translation = Doctrine_DisabledPerks,
+option SkillLimiterOdysseyRP.NimbleLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_NimbleLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.SneakingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_SneakingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.AxeLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_AxeLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.LongBluntLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_LongBluntLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.ShortBluntLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_ShortBluntLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.LongBladeLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_LongBladeLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.ShortBladeLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_ShortBladeLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.SpearLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_SpearLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.MaintenanceLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_MaintenanceLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.CarpentryLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_CarpentryLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.CookingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_CookingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.FarmingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_FarmingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.FirstAidLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_FirstAidLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.ElectricalLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_ElectricalLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.MetalWorkingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.TailoringLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_TailoringLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.AimingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_AimingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.ReloadingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_SprintingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.FishingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_FishingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.TrappingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_TrappingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.ForagingLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_ForagingLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.MechanicLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_MechanicLimitingTraitList,
 }

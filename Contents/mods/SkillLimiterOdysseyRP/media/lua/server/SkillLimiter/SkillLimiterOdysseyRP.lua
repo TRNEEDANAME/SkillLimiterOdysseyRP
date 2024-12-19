@@ -1,3 +1,11 @@
+-----
+--- FILE NAME : SkillLimiterOdysseyRP
+--- AUTHOR : TRNEEDANAME
+--- DATE OF CREATION : 2024-11-10
+--- DATE OF MODIFICATION : 2024-12-19
+--- PURPOSE : Limit skills
+-----
+
 -- Mod info class
 ---@class SkillLimiterOdysseyRP
 SkillLimiterOdysseyRP = {}
@@ -6,8 +14,10 @@ SkillLimiterOdysseyRP = {}
 SkillLimiterOdysseyRP.modName = "Skill Limiter : The Odyssey's limit"
 SkillLimiterOdysseyRP.modVersion = "1.0"
 SkillLimiterOdysseyRP.modAuthor = "TRNEEDANAME"
-SkillLimiterOdysseyRP.modDescription = "Limits the maximum skill level of a character based on their traits and profession."
+SkillLimiterOdysseyRP.modDescription = "Limits the maximum skill level of a character based on their traits and profession, and allow for surpassing it"
 
+-- The traits that increase the limit (array) 
+-- In sandbox, it's a String
 SkillLimiterOdysseyRP.allTraits = TraitFactory.getTraits()
 SkillLimiterOdysseyRP.skillLimitingTraits = {
     SandboxVars.SkillLimiterOdysseyRP.SprintingLimitingTrait,
@@ -90,11 +100,11 @@ SkillLimiterOdysseyRP.traitXPBoosts = {
     "TR_TrappingXP",
     "TR_ForagingXP",
     "TR_MechanicXP",
-    "TR_LifeStyleXP"
 }
 
--- Add this function to your file
-function SkillLimiterOdysseyRP.checkSkillLimits(player)
+---@return integer
+---@param character IsoGameCharacter
+local function SkillLimiterOdysseyRP.checkSkillLimits(player)
     local limits = {}
 
     for i, skillTraits in ipairs(SkillLimiterOdysseyRP.skillLimitingTraits) do
@@ -117,10 +127,10 @@ function SkillLimiterOdysseyRP.checkSkillLimits(player)
                 end
             end
 
-            -- Check for XP boost trait
+            -- Check for XP boost trait, if found, increase limit by 2
             if player:getTraits():contains(SkillLimiterOdysseyRP.traitXPBoosts[i]) then
                 print("Skill Limiter : Found ", SkillLimiterOdysseyRP.traitXPBoosts[i], "XP boosting trait")
-                limit = limit + 1
+                limit = limit + 2
             end
 
             limits[i] = limit
@@ -141,6 +151,81 @@ function SkillLimiterOdysseyRPCheckTraits(traits, item)
         end
     end
     return false
+end
+
+--- Get the maximum skill level for a character based on their traits and profession.
+---@return number
+---@param character IsoGameCharacter
+---@param perk PerkFactory.Perk
+SkillLimiterOdysseyRP.getMaxSkill = function(character, perk)
+    local character_traits = character:getTraits()
+    local character_profession_str = character:getDescriptor():getProfession()
+    local trait_perk_level = 0
+    local bonus = SkillLimiterOdysseyRP.checkSkillLimits(character_traits)
+
+    if not bonus then
+        print("SkillLimiterOdysseyRP: Limiting to max cap since perk was not found: " .. perk:getId() .. ".")
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
+    end
+
+    -- If bonus is 3 or more, we do not need to check whether or not we should cap the skill. Return.
+    if bonus >= 10 then
+        print("SkillLimiterOdysseyRP: Limiting to max cap since bonus >= 10: (" .. bonus .. ")")
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
+    end
+
+    local character_profession = ProfessionFactory.getProfession(character_profession_str)
+
+    -- Go through the XPBoostMap of the profession and add the relevant perk level to the total
+    if character_profession then
+        local profession_xp_boost_map = character_profession:getXPBoostMap()
+        if profession_xp_boost_map then
+            local mapTable = transformIntoKahluaTable(profession_xp_boost_map)
+            for prof_perk, level in pairs(mapTable) do
+                if prof_perk:getId() == perk:getId() then
+                    trait_perk_level = trait_perk_level + level:intValue()
+                end
+            end
+        end
+    end
+
+    if bonus then
+        trait_perk_level = trait_perk_level + bonus
+    end
+
+    if trait_perk_level <= 0 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl0Cap
+    end
+    if trait_perk_level == 1 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl1Cap
+    end
+    if trait_perk_level == 2 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl2Cap
+    end
+    if trait_perk_level == 3 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl3Cap
+    end
+    if trait_perk_level == 4 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl4Cap
+    end
+    if trait_perk_level == 5 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl5Cap
+    end
+    if trait_perk_level == 6 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl6Cap
+    end
+    if trait_perk_level == 7 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl7Cap
+    end
+    if trait_perk_level == 8 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl8Cap
+    end
+    if trait_perk_level == 9 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl9Cap
+    end
+    if trait_perk_level >= 10 then
+        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
+    end
 end
 
 ---@param character IsoGameCharacter
@@ -164,6 +249,7 @@ SkillLimiterOdysseyRP.limitSkill = function(character, perk, level)
         HaloTextHelper.addText(character, "The " .. perk:getId() .. " skill was capped to level " .. max_skill .. ".", HaloTextHelper.getColorWhite())
     end
 end
+
 
 -- Mod event variables
 
@@ -203,6 +289,12 @@ local function check_table()
     end
     SkillLimiterOdysseyRP.perks_leveled_up = {}
 end
+
+-------
+--- BOOKS
+-------
+
+
 
 function ISReadABook:perform(...)
 
@@ -422,6 +514,7 @@ if self.item:getFullType() == "Base.TR_MechanicXPMag" then
 end
 
 
+
 	-- -- Dextrous Trait
 	-- if self.item:getFullType() == "Base.DextrousMag" then
 	-- 	local traits = self.character:getTraits()
@@ -473,4 +566,4 @@ end
 
 Events.LevelPerk.Add(add_to_table)
 Events.OnTick.Add(check_table)
-Events.OnTick.Add(init);
+Events.OnTick.Add(init)

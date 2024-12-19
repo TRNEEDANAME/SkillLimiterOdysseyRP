@@ -1,77 +1,185 @@
 Sandbox_EN = {
-	Sandbox_SkillLimiter = "Skill Limiter",
 
-    SprintingLimitingTrait = "Run as fast as the wind",
-    LightfootedLimitingTrait = "Be as light as a feather",
-    NimbleLimitingTrait = "Be as nimble as a cat",
-    SneakingLimitingTrait = "Be as sneaky as a ghost",
-    AxeLimitingTrait = "Become the axe man you dreamed to be",
-    LongBluntLimitingTrait = "Learn to be a baseball player",
-    ShortBluntLimitingTrait = "Lean the art of hammer",
-    LongBladeLimitingTrait = "Learn the art of the blade",
-    ShortBladeLimitingTrait = "Lean the art of stabbing",
-    SpearLimitingTrait = "Learn the art of the ancient weapons",
-    MaintenanceLimitingTrait = "How to maintain a weapon",
-    CarpentryLimitingTrait = "Learn woodworking",
-    CookingLimitingTrait = "How to be a chef",
-    FarmingLimitingTrait = "Learn farming",
-    FirstAidLimitingTrait = "A first aid guide",
-    ElectricalLimitingTrait = "How to use electricity",
-    MetalWorkingLimitingTrait = "Learn metal working",
-    TailoringLimitingTrait = "Learn the art of repairing clothes",
-    AimingLimitingTrait = "Point, aim, fire, start again",
-    ReloadingLimitingTrait = "Load, reload, unload",
-    FishingLimitingTrait = "Learn fishing",
-    TrappingLimitingTrait = "How to trap, and hunt",
-    ForagingLimitingTrait = "How to find and forage",
-    MechanicLimitingTrait = "How to repair cars",
+Sandbox_SkillLimiterOdysseyRP = "Odyssey's Skill Limiter",
 
-UI_trait_tr_sprintingxp = "",
-UI_trait_tr_sprintingxpdesc = "",
-UI_trait_tr_lightfootedxp = "",
-UI_trait_tr_lightfootedxpdesc = "",
-UI_trait_tr_nimblexp = "",
-UI_trait_tr_nimblexpdesc = "",
-UI_trait_tr_sneakingxp = "",
-UI_trait_tr_sneakingxpdesc = "",
-UI_trait_tr_axexp = "",
-UI_trait_tr_axexpdesc = "",
-UI_trait_tr_longbluntxp = "",
-UI_trait_tr_longbluntxpdesc = "",
-UI_trait_tr_shortbluntxp = "",
-UI_trait_tr_shortbluntxpdesc = "",
-UI_trait_tr_longbladexp = "",
-UI_trait_tr_longbladexpdesc = "",
-UI_trait_tr_shortbladexp = "",
-UI_trait_tr_shortbladexpdesc = "",
-UI_trait_tr_spearxp = "",
-UI_trait_tr_spearxpdesc = "",
-UI_trait_tr_maintenancexp = "",
-UI_trait_tr_maintenancexpdesc = "",
-UI_trait_tr_carpentryxp = "",
-UI_trait_tr_carpentryxpdesc = "",
-UI_trait_tr_cookingxp = "",
-UI_trait_tr_cookingxpdesc = "",
-UI_trait_tr_farmingxp = "",
-UI_trait_tr_farmingxpdesc = "",
-UI_trait_tr_firstaidxp = "",
-UI_trait_tr_firstaidxpdesc = "",
-UI_trait_tr_electricalxp = "",
-UI_trait_tr_electricalxpdesc = "",
-UI_trait_tr_metalworkingxp = "",
-UI_trait_tr_metalworkingxpdesc = "",
-UI_trait_tr_tailoringxp = "",
-UI_trait_tr_tailoringxpdesc = "",
-UI_trait_tr_aimingxp = "",
-UI_trait_tr_aimingxpdesc = "",
-UI_trait_tr_reloadingxp = "",
-UI_trait_tr_reloadingxpdesc = "",
-UI_trait_tr_fishingxp = "",
-UI_trait_tr_fishingxpdesc = "",
-UI_trait_tr_trappingxp = "",
-UI_trait_tr_trappingxpdesc = "",
-UI_trait_tr_foragingxp = "",
-UI_trait_tr_foragingxpdesc = "",
-UI_trait_tr_mechanicxp = "",
-UI_trait_tr_Mechanicxpdesc = "",
+
+SkillLimiterOdysseyRP_EnableSprintLimit = "Enable the Sprint skill limit",
+SkillLimiterOdysseyRP_EnableSprintLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableLightfootLimit = "Enable the Lighooted skill limit",
+SkillLimiterOdysseyRP_EnableLightfootLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableNimbleLimit = "Enable the Nimble skill limit",
+SkillLimiterOdysseyRP_EnableNimbleLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableSneakingLimit = "Enable the Sneaking skill limit",
+SkillLimiterOdysseyRP_EnableSneakingLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableAxeLimit = "Enable the Axe skill limit",
+SkillLimiterOdysseyRP_EnableAxeLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableLongBluntLimit = "Enable the Long Blunt skill l
+SkillLimiterOdysseyRP_EnableLongBluntLimit_tooltip = "",
+imit",
+SkillLimiterOdysseyRP_EnableShortBluntLimit = "Enable the Short Blunt skill l
+SkillLimiterOdysseyRP_EnableShortBluntLimit_tooltip = "",
+imit",
+SkillLimiterOdysseyRP_EnableLongBladeLimit = "Enable the Long Blade skill l
+SkillLimiterOdysseyRP_EnableLongBladeLimit_tooltip = "",
+imit",
+SkillLimiterOdysseyRP_EnableShortBladeLimit = "Enable the Short Blade skill l
+SkillLimiterOdysseyRP_EnableShortBladeLimit_tooltip = "",
+imit",
+SkillLimiterOdysseyRP_EnableSpearLimit = "Enable the Spear skill limit",
+SkillLimiterOdysseyRP_EnableSpearLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableMaintenanceLimit = "Enable the Maintenance skill limit",
+SkillLimiterOdysseyRP_EnableMaintenanceLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableCarpentryLimit = "Enable the Carpentry skill limit",
+SkillLimiterOdysseyRP_EnableCarpentryLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableCookingLimi = "Enable the Cooking skill limit",
+SkillLimiterOdysseyRP_EnableCookingLimi_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableFarmingLimit = "Enable the Farming skill limit",
+SkillLimiterOdysseyRP_EnableFarmingLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableFirstAidLimit = "Enable the First Aid skill l
+SkillLimiterOdysseyRP_EnableFirstAidLimit_tooltip = "",
+imit",
+SkillLimiterOdysseyRP_EnableElectricalLimit = "Enable the Electricital skill limit",
+SkillLimiterOdysseyRP_EnableElectricalLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableMetalWorkingLimit = "Enable the Metal Working skill l
+SkillLimiterOdysseyRP_EnableMetalWorkingLimit_tooltip = "",
+imit",
+SkillLimiterOdysseyRP_EnableTailoringLimit = "Enable the Tailoring skill limit",
+SkillLimiterOdysseyRP_EnableTailoringLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableAimingLimit = "Enable the Aiming skill limit",
+SkillLimiterOdysseyRP_EnableAimingLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableReloadingLimit = "Enable the Reloading skill limit",
+SkillLimiterOdysseyRP_EnableReloadingLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableFishingLimit = "Enable the Fishing skill limit",
+SkillLimiterOdysseyRP_EnableFishingLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableTrappingLimit = "Enable the Trapping skill limit",
+SkillLimiterOdysseyRP_EnableTrappingLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableForagingLimit = "Enable the Foraging skill limit",
+SkillLimiterOdysseyRP_EnableForagingLimit_tooltip = "",
+
+SkillLimiterOdysseyRP_EnableMechanicLimit = "Enable the Mechanic skill limit",
+SkillLimiterOdysseyRP_EnableMechanicLimit_tooltip = "",
+
+
+SkillLimiterOdysseyRP_PerkLvl0Cap = "",
+SkillLimiterOdysseyRP_PerkLvl0Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl1Cap = "",
+SkillLimiterOdysseyRP_PerkLvl1Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl2Cap = "",
+SkillLimiterOdysseyRP_PerkLvl2Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl3Cap = "",
+SkillLimiterOdysseyRP_PerkLvl3Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl4Cap = "",
+SkillLimiterOdysseyRP_PerkLvl4Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl5Cap = "",
+SkillLimiterOdysseyRP_PerkLvl5Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl6Cap = "",
+SkillLimiterOdysseyRP_PerkLvl6Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl7Cap = "",
+SkillLimiterOdysseyRP_PerkLvl7Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl8Cap = "",
+SkillLimiterOdysseyRP_PerkLvl8Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl9Cap = "",
+SkillLimiterOdysseyRP_PerkLvl9Cap_tooltip = "",
+
+SkillLimiterOdysseyRP_PerkLvl10Cap = "",
+SkillLimiterOdysseyRP_PerkLvl10Cap_tooltip = "",
+
+
+
+SkillLimiterOdysseyRP_SprintingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_SprintingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_LightfootedLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_NimbleLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_NimbleLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_SneakingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_SneakingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_AxeLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_AxeLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_LongBluntLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_ShortBluntLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_LongBladeLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_ShortBladeLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_SpearLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_SpearLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_MaintenanceLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_CarpentryLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_CookingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_CookingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_FarmingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_FarmingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_FirstAidLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_ElectricalLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_TailoringLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_TailoringLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_AimingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_AimingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_SprintingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_SprintingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_FishingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_FishingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_TrappingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_TrappingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_ForagingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_ForagingLimitingTraitList_tooltip = "",
+
+SkillLimiterOdysseyRP_MechanicLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
+SkillLimiterOdysseyRP_MechanicLimitingTraitList_tooltip = "",
 }
