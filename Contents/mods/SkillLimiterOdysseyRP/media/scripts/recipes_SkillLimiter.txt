@@ -1,290 +1,325 @@
 module Base
 {
+    recipe Create Skill XP Book
+    {
+        Book=2,
+        Glue=0.2,
+        LeatherStrips=2,
+        SkillRequired:Tailoring=8,
+        Time:200.0,
+
+        Result: TR_SkillXPBook_Base,
+    }
+
     recipe Write Sprinting XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_SprintingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Sprinting=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Lightfooted XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_LightfootedXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Lightfoot=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Nimble XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_NimbleXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Nimble=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Sneaking XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_SneakingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Sneak=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Axe XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_AxeXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Woodcutting=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Long Blunt XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_LongBluntXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:LongBlunt=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Short Blunt XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_ShortBluntXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:SmallBlunt=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Long Blade XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_LongBladeXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:LongBlade=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Short Blade XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_ShortBladeXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:SmallBlade=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Spear XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_SpearXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Spear=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Maintenance XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_MaintenanceXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Maintenance=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Carpentry XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_CarpentryXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Carpentry=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Cooking XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_CookingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Cooking=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Farming XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_FarmingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Farming=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write First Aid XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_FirstAidXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Doctor=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Electricity XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_ElectricalXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Electricity=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Metal Working XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_MetalWorkingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:MetalWelding=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Tailoring XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_TailoringXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Tailoring=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Aiming XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_AimingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Aiming=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Reloading XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_ReloadingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Reloading=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Fishing XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_FishingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Fishing=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Trapping XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_TrappingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Trapping=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Foraging XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_ForagingXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:PlantScavenging=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 
     recipe Write Mechanics XP Book
     {
+        TR_SkillXPBook_Base,
         keep [Recipe.GetItemTypes.Write],
 
         Result:TR_MechanicXPMag,
-        RemoveResultItem:true,
+        RemoveResultItem:false,
         SkillRequired:Mechanics=10,
 
         Time:50.0,
-        StopOnWalk:false,
+        StopOnWalk:true,
     }
 }

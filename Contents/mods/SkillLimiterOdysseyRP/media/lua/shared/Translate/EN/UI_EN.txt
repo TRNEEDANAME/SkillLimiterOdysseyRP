@@ -48,5 +48,4 @@ UI_trait_tr_foragingxp = "",
 UI_trait_tr_foragingxpdesc = "",
 UI_trait_tr_mechanicxp = "",
 UI_trait_tr_Mechanicxpdesc = "",
-
 }

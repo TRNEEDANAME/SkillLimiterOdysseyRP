@@ -5,6 +5,18 @@ module Base
 		Base
 	}
 
+	item TR_SkillXPBook_Base
+	{
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Normal,
+		DisplayName  	 = A standard book,
+		Icon             = Book,
+		StaticModel      = Normal,
+		WorldStaticModel = GTMNutritionist_Ground,
+
+	}
+
 	item TR_SprintingXPMag
 	{
 		NumberOfPages	=	220,
@@ -14,7 +26,7 @@ module Base
 		DisplayName  	 = A sprinting guide, by Oliver,
 		Icon             = NutritionistMag,
 		TeachedRecipes   = TR_SprintingXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMNutritionist_Ground,
 	}
 		
@@ -27,7 +39,7 @@ module Base
 		DisplayName  	 = Go fast, go silently,
 		Icon             = OrganizedMag,
 		TeachedRecipes   = TR_LightfootedXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMOrganized_Ground,
 	}
 	
@@ -40,7 +52,7 @@ module Base
 		DisplayName  	 = How to be quick on your feet,
 		Icon             = SpeedDemonMag,
 		TeachedRecipes   = TR_NimbleXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMSpeedDemon_Ground,
 	}
 	
@@ -53,7 +65,7 @@ module Base
 		DisplayName  	 = A sneaky as a snake,
 		Icon             = OutdoorsmanMag,
 		TeachedRecipes   = TR_SneakingXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMOutdoorsman_Ground,
 	}
 	
@@ -66,7 +78,7 @@ module Base
 		DisplayName  	 = Get axed,
 		Icon             = HandyMag,
 		TeachedRecipes   = TR_AxeXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMHandy_Ground,
 	}
 	
@@ -79,7 +91,7 @@ module Base
 		DisplayName  	 = How to be a good baseball player,
 		Icon             = FastReaderMag,
 		TeachedRecipes   = TR_LongBluntXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMFastReader_Ground,
 	}
 	
@@ -92,7 +104,7 @@ module Base
 		DisplayName  	 = How to hammer your point,
 		Icon             = FastLearnerMag,
 		TeachedRecipes   = TR_ShortBluntXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMFastLearner_Ground,
 	}
 	
@@ -105,7 +117,7 @@ module Base
 		DisplayName  	 = Use a machete like never before,
 		Icon             = AxeManMag,
 		TeachedRecipes   = TR_LongBladeXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMAxeMan_Ground,
 	}
 	
@@ -118,7 +130,7 @@ module Base
 		DisplayName  	 = How to become british,
 		Icon             = BurglarMag,
 		TeachedRecipes   = TR_ShortBladeXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMBurglar_Ground,
 	}
 
@@ -131,7 +143,7 @@ module Base
 		DisplayName  	 = Reject society, go back to caveman,
 		Icon             = GracefulMag,
 		TeachedRecipes   = TR_SpearXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMGraceful_Ground,
 	}
 
@@ -144,7 +156,7 @@ module Base
 		DisplayName  	 = How to maintain everything, except relationship,
 		Icon             = DextrousMag,
 		TeachedRecipes   = TR_MaintenanceXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMDextrous_Ground,
 	}
 	
@@ -157,7 +169,7 @@ module Base
 		DisplayName  	 = Be as cool as Woodcut,
 		Icon             = InconspicuousMag,
 		TeachedRecipes   = TR_CarpentryXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMInconspicuous_Ground,
 	}
 
@@ -170,7 +182,7 @@ module Base
 		DisplayName  	 = How to make food that's actually good,
 		Icon             = KeenHearingMag,
 		TeachedRecipes   = TR_CookingXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMKeenHearing_Ground,
 	}
 
@@ -183,7 +195,7 @@ module Base
 		DisplayName  	 = How to become a man of honest work,
 		Icon             = KeenHearingMag,
 		TeachedRecipes   = TR_FarmingXP,
-		StaticModel      = Magazine,
+		StaticModel      = Book,
 		WorldStaticModel = GTMKeenHearing_Ground,
     }
 

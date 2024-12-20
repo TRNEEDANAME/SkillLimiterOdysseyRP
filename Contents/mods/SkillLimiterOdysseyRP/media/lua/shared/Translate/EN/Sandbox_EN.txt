@@ -111,75 +111,73 @@ SkillLimiterOdysseyRP_PerkLvl10Cap_tooltip = "",
 
 
 
-SkillLimiterOdysseyRP_SprintingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_SprintingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Perks that increase Sprinting level",
+SkillLimiterOdysseyRP_SprintingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Sprinting skill",
 
-SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_LightfootedLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Perks that increase Lightfoot level",
+SkillLimiterOdysseyRP_LightfootedLimitingTraitList_tooltip = "List of perks that increase the level limit for the Lightfooted skill",
 
-SkillLimiterOdysseyRP_NimbleLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_NimbleLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Perks that increase Nimble level",
+SkillLimiterOdysseyRP_NimbleLimitingTraitList_tooltip = "List of perks that increase the level limit for the Nimble skill",
 
-SkillLimiterOdysseyRP_SneakingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_SneakingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Perks that increase Sneaking level",
+SkillLimiterOdysseyRP_SneakingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Sneaking skill",
 
-SkillLimiterOdysseyRP_AxeLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_AxeLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_AxeLimitingTraitList = "Perks that increase Axe level",
+SkillLimiterOdysseyRP_AxeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Axe skill",
 
-SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_LongBluntLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Perks that increase Long Blunt level",
+SkillLimiterOdysseyRP_LongBluntLimitingTraitList_tooltip = "List of perks that increase the level limit for the Long Blunt skill",
 
-SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_ShortBluntLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "Perks that increase Short Blunt level",
+SkillLimiterOdysseyRP_ShortBluntLimitingTraitList_tooltip = "List of perks that increase the level limit for the Short Blunt skill",
 
-SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_LongBladeLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "Perks that increase Long Blade level",
+SkillLimiterOdysseyRP_LongBladeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Long Blade skill",
 
-SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_ShortBladeLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Perks that increase Short Blade level",
+SkillLimiterOdysseyRP_ShortBladeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Short Blade skill",
 
-SkillLimiterOdysseyRP_SpearLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_SpearLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_SpearLimitingTraitList = "Perks that increase Spear level",
+SkillLimiterOdysseyRP_SpearLimitingTraitList_tooltip = "List of perks that increase the level limit for the Spear skill",
 
-SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_MaintenanceLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Perks that increase Maintenance level",
+SkillLimiterOdysseyRP_MaintenanceLimitingTraitList_tooltip = "List of perks that increase the level limit for the Maintenance skill",
 
-SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_CarpentryLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Perks that increase Carpentry level",
+SkillLimiterOdysseyRP_CarpentryLimitingTraitList_tooltip = "List of perks that increase the level limit for the Carpentry skill",
 
-SkillLimiterOdysseyRP_CookingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_CookingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_CookingLimitingTraitList = "Perks that increase Cooking level",
+SkillLimiterOdysseyRP_CookingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Cooking skill",
 
-SkillLimiterOdysseyRP_FarmingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_FarmingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Perks that increase Farming level",
+SkillLimiterOdysseyRP_FarmingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Farming skill",
 
-SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_FirstAidLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "Perks that increase First Aid level",
+SkillLimiterOdysseyRP_FirstAidLimitingTraitList_tooltip = "List of perks that increase the level limit for the First Aid skill",
 
-SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_ElectricalLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "Perks that increase Electricital level",
+SkillLimiterOdysseyRP_ElectricalLimitingTraitList_tooltip = "List of perks that increase the level limit for the Electricital skill",
 
-SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "Perks that increase Metal Working level",
+SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Metal Working skill",
 
-SkillLimiterOdysseyRP_TailoringLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_TailoringLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Perks that increase Tailor level",
+SkillLimiterOdysseyRP_TailoringLimitingTraitList_tooltip = "List of perks that increase the level limit for the Tailoring skill",
 
-SkillLimiterOdysseyRP_AimingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_AimingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_AimingLimitingTraitList = "Perks that increase Aiming level",
+SkillLimiterOdysseyRP_AimingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Aiming skill",
 
-SkillLimiterOdysseyRP_SprintingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_SprintingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_FishingLimitingTraitList = "Perks that increase Fishing level",
+SkillLimiterOdysseyRP_FishingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Fishing skill",
 
-SkillLimiterOdysseyRP_FishingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_FishingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Perks that increase Trapping level",
+SkillLimiterOdysseyRP_TrappingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Trapping skill",
 
-SkillLimiterOdysseyRP_TrappingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_TrappingLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Perks that increase Foraging level",
+SkillLimiterOdysseyRP_ForagingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Foraging skill",
 
-SkillLimiterOdysseyRP_ForagingLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_ForagingLimitingTraitList_tooltip = "",
-
-SkillLimiterOdysseyRP_MechanicLimitingTraitList = "List of perks that increase the cap for the Sprinting skill",
-SkillLimiterOdysseyRP_MechanicLimitingTraitList_tooltip = "",
+SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Perks that increase Mechanic level",
+SkillLimiterOdysseyRP_MechanicLimitingTraitList_tooltip = "List of perks that increase the level limit for the Mechanic skill",
 }
+

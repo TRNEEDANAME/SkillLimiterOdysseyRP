@@ -283,15 +283,6 @@ option SkillLimiterOdysseyRP.PerkLvl10Cap
     translation = SkillLimiterOdysseyRP_PerkLvl10Cap,
 }
 
-option Doctrine.ForcedPerks
-{
-	type = string,
-	default = Delimit the list with semicolons,
-
-	page = Doctrine,
-	translation = Doctrine_ForcedPerks,
-}
-
 option SkillLimiterOdysseyRP.SprintingLimitingTrait
 {
     type = string,
@@ -449,7 +440,7 @@ option SkillLimiterOdysseyRP.ReloadingLimitingTrait
     type = string,
     default = Delimit the list with semicolons,
     page = SkillLimiterOdysseyRP,
-    translation = SkillLimiterOdysseyRP_SprintingLimitingTraitList,
+    translation = SkillLimiterOdysseyRP_ReloadingLimitingTraitList,
 }
 
 option SkillLimiterOdysseyRP.FishingLimitingTrait
@@ -483,3 +474,183 @@ option SkillLimiterOdysseyRP.MechanicLimitingTrait
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_MechanicLimitingTraitList,
 }
+
+--- List of vanilla traits, and which skills they increase, easy for copy / paste
+--- Traits are separated by semicolons ';'
+--- The modded variants add the vanilla traits
+
+------------------
+----- VANILLA
+------------------
+-- SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Athletic; Fit; Runner; "
+-- SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Gymnast; "
+-- SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Gymnast; "
+-- SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Hunter; Graceful;"
+
+-- SkillLimiterOdysseyRP_AxeLimitingTraitList = "Axe Man; Brawler; "
+-- SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Baseball Player; Brawler; Burglar"
+-- SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = ""
+-- SkillLimiterOdysseyRP_LongBladeLimitingTraitList = ""
+-- SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Hunter; "
+-- SkillLimiterOdysseyRP_SpearLimitingTraitList = ""
+
+-- SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Handy; "
+-- SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Handy; "
+-- SkillLimiterOdysseyRP_CookingLimitingTraitList = "Cook; "
+-- SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Gardener; "
+-- SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "First Aider; Former Scout; "
+-- SkillLimiterOdysseyRP_ElectricalLimitingTraitList = ""
+-- SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = ""
+-- SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Sewer; "
+
+-- SkillLimiterOdysseyRP_AimingLimitingTraitList = "Hunter; "
+-- SkillLimiterOdysseyRP_ReloadingLimitingTraitList = ""
+
+-- SkillLimiterOdysseyRP_FishingLimitingTraitList = "Angler; "
+-- SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Hiker; Hunter; "
+-- SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Former Scout; Hiker; "
+-- SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Amateur Mechanic; "
+
+------------------
+----- SOTO
+------------------
+
+-- SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Athletic; Fit; Runner; Jogger"
+-- SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Gymnast; "
+-- SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Gymnast; "
+-- SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Hunter; Graceful; Sneaky"
+
+-- SkillLimiterOdysseyRP_AxeLimitingTraitList = "Axe Man; Brawler; WoodAxeMyBeloved"
+-- SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Baseball Player; Brawler; Burglar"
+-- SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "Crusher; "
+-- SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "Swordsman;"
+-- SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Hunter; Stabber; BladeTools"
+-- SkillLimiterOdysseyRP_SpearLimitingTraitList = "Spearman;"
+
+-- SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Handy;Durab; "
+-- SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Handy; Carpenter; "
+-- SkillLimiterOdysseyRP_CookingLimitingTraitList = "Cook; "
+-- SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Gardener; "
+-- SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "First Aider; Former Scout; "
+-- SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "ElectricTech;"
+-- SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "MetalWelder;"
+-- SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Sewer; "
+
+-- SkillLimiterOdysseyRP_AimingLimitingTraitList = "Hunter; Shooter; Sniper; ExpShooter"
+-- SkillLimiterOdysseyRP_ReloadingLimitingTraitList = "Shooter; ExpShooter"
+
+-- SkillLimiterOdysseyRP_FishingLimitingTraitList = "Angler; "
+-- SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Hiker; Hunter; "
+-- SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Former Scout; Hiker; "
+-- SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Amateur Mechanic; AutoMechanic"
+
+
+--- Remarks
+-- Not added, but "Cruelty" would make sense for Small / Long Blade & Blunt, or any combat skills
+-- Not added, but "GenExp2" would make sense for electrical
+-- Not added, but "MarathonRunner" would make sense for sprinting
+-- Not added, but "MushroomPicker" and "Entomologist" would make sense for Foraging
+
+------------------
+----- MST
+------------------
+
+
+-- SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Athletic; Fit; Runner; MarathonRunner"
+-- SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Gymnast; NinjaWay"
+-- SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Gymnast; StrongNimble"
+-- SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Hunter; Graceful; Sneaky; NinjaWay"
+
+-- SkillLimiterOdysseyRP_AxeLimitingTraitList = "Axe Man; Brawler; Cutter"
+-- SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Baseball Player; Brawler; Burglar"
+-- SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "Shortbluntfan"
+-- SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "Swordsman"
+-- SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Hunter; Shortbladefan"
+-- SkillLimiterOdysseyRP_SpearLimitingTraitList = "Spearman"
+
+-- SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Handy; Durabile"
+-- SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Handy; AMCarpenter"
+-- SkillLimiterOdysseyRP_CookingLimitingTraitList = "Cook; AMCook"
+-- SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Gardener; "
+-- SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "First Aider; Former Scout; "
+-- SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "AMElectrician"
+-- SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "AMMetalworker"
+-- SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Sewer; "
+
+-- SkillLimiterOdysseyRP_AimingLimitingTraitList = "Hunter; Gunfan; Sharpshooter"
+-- SkillLimiterOdysseyRP_ReloadingLimitingTraitList = "Gunfan"
+
+-- SkillLimiterOdysseyRP_FishingLimitingTraitList = "Angler; "
+-- SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Hiker; Hunter; AMTrapper"
+-- SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Former Scout; Hiker; AMForager; Mushroomer"
+-- SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Amateur Mechanic; AMMechanic; "
+
+--- Remarks
+-- Not added, but "Cruelty" would make sense for Small / Long Blade & Blunt, or any combat skills
+
+------------------
+----- Expanded Traits
+------------------
+
+-- SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Athletic; Fit; Runner; "
+-- SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Gymnast; "
+-- SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Gymnast; "
+-- SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Hunter; Graceful;Sneaky"
+
+-- SkillLimiterOdysseyRP_AxeLimitingTraitList = "Axe Man; Brawler; AxeThrower;"
+-- SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Baseball Player; Brawler; Burglar"
+-- SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "StickFighter"
+-- SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "KendoHobby"
+-- SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Hunter; KnifeFighter"
+-- SkillLimiterOdysseyRP_SpearLimitingTraitList = "SojutsuHobby"
+
+-- SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Handy; RestorationExpert"
+-- SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Handy; IkeaExpert"
+-- SkillLimiterOdysseyRP_CookingLimitingTraitList = "Cook; HomeCook"
+-- SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Gardener; "
+-- SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "First Aider; Former Scout; "
+-- SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "AVClub; Revolutionary"
+-- SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "BodyworkHobby"
+-- SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Sewer; "
+
+-- SkillLimiterOdysseyRP_AimingLimitingTraitList = "Hunter; GunHobby"
+-- SkillLimiterOdysseyRP_ReloadingLimitingTraitList = "GunHobby;"
+
+-- SkillLimiterOdysseyRP_FishingLimitingTraitList = "Angler; "
+-- SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Hiker; Hunter; "
+-- SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Former Scout; Hiker; "
+-- SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Amateur Mechanic; "
+
+------------------
+----- Hephas Occupations and Traits
+------------------
+
+
+-- SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Athletic; Fit; Runner; "
+-- SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Gymnast;"
+-- SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Gymnast; Agile"
+-- SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Hunter; Graceful;"
+
+-- SkillLimiterOdysseyRP_AxeLimitingTraitList = "Axe Man; Brawler; Vern; Axe1; Axe2; Axe3"
+-- SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Baseball Player; Brawler; Burglar"
+-- SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "ShortBlunt1; ShortBlunt2; ShortBlunt3"
+-- SkillLimiterOdysseyRP_LongBladeLimitingTraitList = ""
+-- SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Hunter; ShortBlade1; ShortBlade2; ShortBlade3"
+-- SkillLimiterOdysseyRP_SpearLimitingTraitList = "Spear1; Spear2; Spear3"
+
+-- SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Handy; Maint1; Maint2"
+-- SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Handy; ; Wood1; Wood2; Wood3;"
+-- SkillLimiterOdysseyRP_CookingLimitingTraitList = "Cook; Cooking1"
+-- SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Gardener; Farm2; Farm3"
+-- SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "First Aider; Former Scout; Medic2; Medic3"
+-- SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "Elect1; Elect2"
+-- SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "Metal1; Metal2; Metal3;"
+-- SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Sewer; Sew1; Sew2"
+
+-- SkillLimiterOdysseyRP_AimingLimitingTraitList = "Hunter; Aim1; Aim2; Aim3;"
+-- SkillLimiterOdysseyRP_ReloadingLimitingTraitList = "Reload1; Reload2; Reload3"
+
+-- SkillLimiterOdysseyRP_FishingLimitingTraitList = "Angler; Fishing1; Fishing2; "
+-- SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Hiker; Hunter; Trap1; Trap2; Trap3; "
+-- SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Former Scout; Hiker; Forage1; Forage2; Forage3;"
+-- SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Amateur Mechanic; Mechanics3; Mechanics4"
