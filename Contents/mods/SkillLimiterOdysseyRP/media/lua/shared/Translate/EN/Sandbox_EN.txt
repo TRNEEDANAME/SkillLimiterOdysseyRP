@@ -2,182 +2,216 @@ Sandbox_EN = {
 
 Sandbox_SkillLimiterOdysseyRP = "Odyssey's Skill Limiter",
 
+/*---------------------------------------------------------------------
+-- General
+---------------------------------------------------------------------*/
 
-SkillLimiterOdysseyRP_EnableSprintLimit = "Enable the Sprint skill limit",
-SkillLimiterOdysseyRP_EnableSprintLimit_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_SkillLimitIncrease = "Amount of limit increased",
+Sandbox_SkillLimiterOdysseyRP_SkillLimitIncrease_tooltip = "The amount of level reading a book grant.",
 
-SkillLimiterOdysseyRP_EnableLightfootLimit = "Enable the Lighooted skill limit",
-SkillLimiterOdysseyRP_EnableLightfootLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableNimbleLimit = "Enable the Nimble skill limit",
-SkillLimiterOdysseyRP_EnableNimbleLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableSneakingLimit = "Enable the Sneaking skill limit",
-SkillLimiterOdysseyRP_EnableSneakingLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableAxeLimit = "Enable the Axe skill limit",
-SkillLimiterOdysseyRP_EnableAxeLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableLongBluntLimit = "Enable the Long Blunt skill l
-SkillLimiterOdysseyRP_EnableLongBluntLimit_tooltip = "",
-imit",
-SkillLimiterOdysseyRP_EnableShortBluntLimit = "Enable the Short Blunt skill l
-SkillLimiterOdysseyRP_EnableShortBluntLimit_tooltip = "",
-imit",
-SkillLimiterOdysseyRP_EnableLongBladeLimit = "Enable the Long Blade skill l
-SkillLimiterOdysseyRP_EnableLongBladeLimit_tooltip = "",
-imit",
-SkillLimiterOdysseyRP_EnableShortBladeLimit = "Enable the Short Blade skill l
-SkillLimiterOdysseyRP_EnableShortBladeLimit_tooltip = "",
-imit",
-SkillLimiterOdysseyRP_EnableSpearLimit = "Enable the Spear skill limit",
-SkillLimiterOdysseyRP_EnableSpearLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableMaintenanceLimit = "Enable the Maintenance skill limit",
-SkillLimiterOdysseyRP_EnableMaintenanceLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableCarpentryLimit = "Enable the Carpentry skill limit",
-SkillLimiterOdysseyRP_EnableCarpentryLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableCookingLimi = "Enable the Cooking skill limit",
-SkillLimiterOdysseyRP_EnableCookingLimi_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableFarmingLimit = "Enable the Farming skill limit",
-SkillLimiterOdysseyRP_EnableFarmingLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableFirstAidLimit = "Enable the First Aid skill l
-SkillLimiterOdysseyRP_EnableFirstAidLimit_tooltip = "",
-imit",
-SkillLimiterOdysseyRP_EnableElectricalLimit = "Enable the Electricital skill limit",
-SkillLimiterOdysseyRP_EnableElectricalLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableMetalWorkingLimit = "Enable the Metal Working skill l
-SkillLimiterOdysseyRP_EnableMetalWorkingLimit_tooltip = "",
-imit",
-SkillLimiterOdysseyRP_EnableTailoringLimit = "Enable the Tailoring skill limit",
-SkillLimiterOdysseyRP_EnableTailoringLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableAimingLimit = "Enable the Aiming skill limit",
-SkillLimiterOdysseyRP_EnableAimingLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableReloadingLimit = "Enable the Reloading skill limit",
-SkillLimiterOdysseyRP_EnableReloadingLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableFishingLimit = "Enable the Fishing skill limit",
-SkillLimiterOdysseyRP_EnableFishingLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableTrappingLimit = "Enable the Trapping skill limit",
-SkillLimiterOdysseyRP_EnableTrappingLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableForagingLimit = "Enable the Foraging skill limit",
-SkillLimiterOdysseyRP_EnableForagingLimit_tooltip = "",
-
-SkillLimiterOdysseyRP_EnableMechanicLimit = "Enable the Mechanic skill limit",
-SkillLimiterOdysseyRP_EnableMechanicLimit_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EmptyBox = "",
+Sandbox_SkillLimiterOdysseyRP_EmptyBox_tooltip = "<RED> <CENTRE> [THIS OPTION DOES NOT DO ANYTHING]",
 
 
-SkillLimiterOdysseyRP_PerkLvl0Cap = "",
-SkillLimiterOdysseyRP_PerkLvl0Cap_tooltip = "",
+/*---------------------------------------------------------------------
+-- List
+---------------------------------------------------------------------*/
 
-SkillLimiterOdysseyRP_PerkLvl1Cap = "",
-SkillLimiterOdysseyRP_PerkLvl1Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableStrengthLimit = "Enable the Strength skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableStrengthLimit_tooltip = "If set to true, the Strength skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl2Cap = "",
-SkillLimiterOdysseyRP_PerkLvl2Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableFitnessLimit = "Enable the Fitness skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableFitnessLimit_tooltip = "If set to true, the Fitness skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl3Cap = "",
-SkillLimiterOdysseyRP_PerkLvl3Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableSprintLimit = "Enable the Sprint skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableSprintLimit_tooltip = "If set to true, the Sprint skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl4Cap = "",
-SkillLimiterOdysseyRP_PerkLvl4Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableLightfootLimit = "Enable the Lighooted skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableLightfootLimit_tooltip = "If set to true, the Lighooted skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl5Cap = "",
-SkillLimiterOdysseyRP_PerkLvl5Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableNimbleLimit = "Enable the Nimble skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableNimbleLimit_tooltip = "If set to true, the Nimble skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl6Cap = "",
-SkillLimiterOdysseyRP_PerkLvl6Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableSneakingLimit = "Enable the Sneaking skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableSneakingLimit_tooltip = "If set to true, the Sneaking skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl7Cap = "",
-SkillLimiterOdysseyRP_PerkLvl7Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableAxeLimit = "Enable the Axe skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableAxeLimit_tooltip = "If set to true, the Axe skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl8Cap = "",
-SkillLimiterOdysseyRP_PerkLvl8Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableLongBluntLimit = "Enable the Long Blunt skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableLongBluntLimit_tooltip = "If set to true, the Long Blunt skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl9Cap = "",
-SkillLimiterOdysseyRP_PerkLvl9Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableShortBluntLimit = "Enable the Short Blunt skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableShortBluntLimit_tooltip = "If set to true, the Short Blunt skill will get capped based on your traits and occupations.",
 
-SkillLimiterOdysseyRP_PerkLvl10Cap = "",
-SkillLimiterOdysseyRP_PerkLvl10Cap_tooltip = "",
+Sandbox_SkillLimiterOdysseyRP_EnableLongBladeLimit = "Enable the Long Blade skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableLongBladeLimit_tooltip = "If set to true, the Long Blade skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableShortBladeLimit = "Enable the Short Blade skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableShortBladeLimit_tooltip = "If set to true, the Short Blade skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableSpearLimit = "Enable the Spear skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableSpearLimit_tooltip = "If set to true, the Spear skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableMaintenanceLimit = "Enable the Maintenance skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableMaintenanceLimit_tooltip = "If set to true, the Maintenance skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableCarpentryLimit = "Enable the Carpentry skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableCarpentryLimit_tooltip = "If set to true, the Carpentry skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableCookingLimi = "Enable the Cooking skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableCookingLimi_tooltip = "If set to true, the Cooking skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableFarmingLimit = "Enable the Farming skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableFarmingLimit_tooltip = "If set to true, the Farming skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableFirstAidLimit = "Enable the First Aid skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableFirstAidLimit_tooltip = "If set to true, the First Aid skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableElectricalLimit = "Enable the Electricital skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableElectricalLimit_tooltip = "If set to true, the Electricital skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableMetalWorkingLimit = "Enable the Metal Working skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableMetalWorkingLimit_tooltip = "If set to true, the Metal Working skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableTailoringLimit = "Enable the Tailoring skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableTailoringLimit_tooltip = "If set to true, the Tailoring skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableAimingLimit = "Enable the Aiming skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableAimingLimit_tooltip = "If set to true, the Aiming skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableReloadingLimit = "Enable the Reloading skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableReloadingLimit_tooltip = "If set to true, the Reloading skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableFishingLimit = "Enable the Fishing skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableFishingLimit_tooltip = "If set to true, the Fishing skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableTrappingLimit = "Enable the Trapping skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableTrappingLimit_tooltip = "If set to true, the Trapping skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableForagingLimit = "Enable the Foraging skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableForagingLimit_tooltip = "If set to true, the Foraging skill will get capped based on your traits and occupations.",
+
+Sandbox_SkillLimiterOdysseyRP_EnableMechanicLimit = "Enable the Mechanic skill limit",
+Sandbox_SkillLimiterOdysseyRP_EnableMechanicLimit_tooltip = "If set to true, the Mechanic skill will get capped based on your traits and occupations.",
+
+/*---------------------------------------------------------------------
+-- Caps
+---------------------------------------------------------------------*/
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl0Cap = "Level 0 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl0Cap_tooltip = "The maximum level you can get if your starting level is 0. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl1Cap = "Level 1 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl1Cap_tooltip = "The maximum level you can get if your starting level is 1. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl2Cap = "Level 2 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl2Cap_tooltip = "The maximum level you can get if your starting level is 2. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl3Cap = "Level 3 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl3Cap_tooltip = "The maximum level you can get if your starting level is 3. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl4Cap = "Level 4 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl4Cap_tooltip = "The maximum level you can get if your starting level is 4. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl5Cap = "Level 5 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl5Cap_tooltip = "The maximum level you can get if your starting level is 5. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl6Cap = "Level 6 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl6Cap_tooltip = "The maximum level you can get if your starting level is 6. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl7Cap = "Level 7 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl7Cap_tooltip = "The maximum level you can get if your starting level is 7. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl8Cap = "Level 8 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl8Cap_tooltip = "The maximum level you can get if your starting level is 8. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl9Cap = "Level 9 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl9Cap_tooltip = "The maximum level you can get if your starting level is 9. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+Sandbox_SkillLimiterOdysseyRP_PerkLvl10Cap = "Level 10 skill cap",
+Sandbox_SkillLimiterOdysseyRP_PerkLvl10Cap_tooltip = "The maximum level you can get if your starting level is 10. \nDoes not appy to Strength, Fitness, or skills with their Enable Trait option to false.",
+
+/*---------------------------------------------------------------------
+-- List
+---------------------------------------------------------------------*/
+
+Sandbox_SkillLimiterOdysseyRP_StrengthLimitingTraitList= "Perks that increase the Strength level",
+Sandbox_SkillLimiterOdysseyRP_StrengthLimitingTraitList_tooltip = "List of perks that increase the level limit for the Strength skill.",
+
+Sandbox_SkillLimiterOdysseyRP_FitnessLimitingTraitList= "Perks that increase the Fitness level",
+Sandbox_SkillLimiterOdysseyRP_FitnessLimitingTraitList_tooltip = "List of perks that increase the level limit for the Fitness skill.",
+
+Sandbox_SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Perks that increase the Sprinting level",
+Sandbox_SkillLimiterOdysseyRP_SprintingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Sprinting skill.",
+
+Sandbox_SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Perks that increase the Lightfoot level",
+Sandbox_SkillLimiterOdysseyRP_LightfootedLimitingTraitList_tooltip = "List of perks that increase the level limit for the Lightfooted skill.",
+
+Sandbox_SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Perks that increase the Nimble level",
+Sandbox_SkillLimiterOdysseyRP_NimbleLimitingTraitList_tooltip = "List of perks that increase the level limit for the Nimble skill.",
+
+Sandbox_SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Perks that increase the Sneaking level",
+Sandbox_SkillLimiterOdysseyRP_SneakingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Sneaking skill.",
+
+Sandbox_SkillLimiterOdysseyRP_AxeLimitingTraitList = "Perks that increase the Axe level",
+Sandbox_SkillLimiterOdysseyRP_AxeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Axe skill.",
+
+Sandbox_SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Perks that increase the Long Blunt level",
+Sandbox_SkillLimiterOdysseyRP_LongBluntLimitingTraitList_tooltip = "List of perks that increase the level limit for the Long Blunt skill.",
+
+Sandbox_SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "Perks that increase the Short Blunt level",
+Sandbox_SkillLimiterOdysseyRP_ShortBluntLimitingTraitList_tooltip = "List of perks that increase the level limit for the Short Blunt skill.",
+
+Sandbox_SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "Perks that increase the Long Blade level",
+Sandbox_SkillLimiterOdysseyRP_LongBladeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Long Blade skill.",
+
+Sandbox_SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Perks that increase the Short Blade level",
+Sandbox_SkillLimiterOdysseyRP_ShortBladeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Short Blade skill.",
+
+Sandbox_SkillLimiterOdysseyRP_SpearLimitingTraitList = "Perks that increase the Spear level",
+Sandbox_SkillLimiterOdysseyRP_SpearLimitingTraitList_tooltip = "List of perks that increase the level limit for the Spear skill.",
+
+Sandbox_SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Perks that increase the Maintenance level",
+Sandbox_SkillLimiterOdysseyRP_MaintenanceLimitingTraitList_tooltip = "List of perks that increase the level limit for the Maintenance skill.",
+
+Sandbox_SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Perks that increase the Carpentry level",
+Sandbox_SkillLimiterOdysseyRP_CarpentryLimitingTraitList_tooltip = "List of perks that increase the level limit for the Carpentry skill.",
+
+Sandbox_SkillLimiterOdysseyRP_CookingLimitingTraitList = "Perks that increase the Cooking level",
+Sandbox_SkillLimiterOdysseyRP_CookingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Cooking skill.",
+
+Sandbox_SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Perks that increase the Farming level",
+Sandbox_SkillLimiterOdysseyRP_FarmingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Farming skill.",
+
+Sandbox_SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "Perks that increase the First Aid level",
+Sandbox_SkillLimiterOdysseyRP_FirstAidLimitingTraitList_tooltip = "List of perks that increase the level limit for the First Aid skill.",
+
+Sandbox_SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "Perks that increase the Electricital level",
+Sandbox_SkillLimiterOdysseyRP_ElectricalLimitingTraitList_tooltip = "List of perks that increase the level limit for the Electricital skill.",
+
+Sandbox_SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "Perks that increase the Metal Working level",
+Sandbox_SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Metal Working skill.",
+
+Sandbox_SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Perks that increase the Tailor level",
+Sandbox_SkillLimiterOdysseyRP_TailoringLimitingTraitList_tooltip = "List of perks that increase the level limit for the Tailoring skill.",
+
+Sandbox_SkillLimiterOdysseyRP_AimingLimitingTraitList = "Perks that increase the Aiming level",
+Sandbox_SkillLimiterOdysseyRP_AimingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Aiming skill.",
+
+Sandbox_SkillLimiterOdysseyRP_ReloadingLimitingTraitList = "Perks that increase the Reloading level",
+Sandbox_SkillLimiterOdysseyRP_ReloadingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Reloading skill.",
 
 
+Sandbox_SkillLimiterOdysseyRP_FishingLimitingTraitList = "Perks that increase the Fishing level",
+Sandbox_SkillLimiterOdysseyRP_FishingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Fishing skill.",
 
-SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Perks that increase Sprinting level",
-SkillLimiterOdysseyRP_SprintingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Sprinting skill",
+Sandbox_SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Perks that increase the Trapping level",
+Sandbox_SkillLimiterOdysseyRP_TrappingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Trapping skill.",
 
-SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Perks that increase Lightfoot level",
-SkillLimiterOdysseyRP_LightfootedLimitingTraitList_tooltip = "List of perks that increase the level limit for the Lightfooted skill",
+Sandbox_SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Perks that increase the Foraging level",
+Sandbox_SkillLimiterOdysseyRP_ForagingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Foraging skill.",
 
-SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Perks that increase Nimble level",
-SkillLimiterOdysseyRP_NimbleLimitingTraitList_tooltip = "List of perks that increase the level limit for the Nimble skill",
-
-SkillLimiterOdysseyRP_SneakingLimitingTraitList = "Perks that increase Sneaking level",
-SkillLimiterOdysseyRP_SneakingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Sneaking skill",
-
-SkillLimiterOdysseyRP_AxeLimitingTraitList = "Perks that increase Axe level",
-SkillLimiterOdysseyRP_AxeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Axe skill",
-
-SkillLimiterOdysseyRP_LongBluntLimitingTraitList = "Perks that increase Long Blunt level",
-SkillLimiterOdysseyRP_LongBluntLimitingTraitList_tooltip = "List of perks that increase the level limit for the Long Blunt skill",
-
-SkillLimiterOdysseyRP_ShortBluntLimitingTraitList = "Perks that increase Short Blunt level",
-SkillLimiterOdysseyRP_ShortBluntLimitingTraitList_tooltip = "List of perks that increase the level limit for the Short Blunt skill",
-
-SkillLimiterOdysseyRP_LongBladeLimitingTraitList = "Perks that increase Long Blade level",
-SkillLimiterOdysseyRP_LongBladeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Long Blade skill",
-
-SkillLimiterOdysseyRP_ShortBladeLimitingTraitList = "Perks that increase Short Blade level",
-SkillLimiterOdysseyRP_ShortBladeLimitingTraitList_tooltip = "List of perks that increase the level limit for the Short Blade skill",
-
-SkillLimiterOdysseyRP_SpearLimitingTraitList = "Perks that increase Spear level",
-SkillLimiterOdysseyRP_SpearLimitingTraitList_tooltip = "List of perks that increase the level limit for the Spear skill",
-
-SkillLimiterOdysseyRP_MaintenanceLimitingTraitList = "Perks that increase Maintenance level",
-SkillLimiterOdysseyRP_MaintenanceLimitingTraitList_tooltip = "List of perks that increase the level limit for the Maintenance skill",
-
-SkillLimiterOdysseyRP_CarpentryLimitingTraitList = "Perks that increase Carpentry level",
-SkillLimiterOdysseyRP_CarpentryLimitingTraitList_tooltip = "List of perks that increase the level limit for the Carpentry skill",
-
-SkillLimiterOdysseyRP_CookingLimitingTraitList = "Perks that increase Cooking level",
-SkillLimiterOdysseyRP_CookingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Cooking skill",
-
-SkillLimiterOdysseyRP_FarmingLimitingTraitList = "Perks that increase Farming level",
-SkillLimiterOdysseyRP_FarmingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Farming skill",
-
-SkillLimiterOdysseyRP_FirstAidLimitingTraitList = "Perks that increase First Aid level",
-SkillLimiterOdysseyRP_FirstAidLimitingTraitList_tooltip = "List of perks that increase the level limit for the First Aid skill",
-
-SkillLimiterOdysseyRP_ElectricalLimitingTraitList = "Perks that increase Electricital level",
-SkillLimiterOdysseyRP_ElectricalLimitingTraitList_tooltip = "List of perks that increase the level limit for the Electricital skill",
-
-SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList = "Perks that increase Metal Working level",
-SkillLimiterOdysseyRP_MetalWorkingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Metal Working skill",
-
-SkillLimiterOdysseyRP_TailoringLimitingTraitList = "Perks that increase Tailor level",
-SkillLimiterOdysseyRP_TailoringLimitingTraitList_tooltip = "List of perks that increase the level limit for the Tailoring skill",
-
-SkillLimiterOdysseyRP_AimingLimitingTraitList = "Perks that increase Aiming level",
-SkillLimiterOdysseyRP_AimingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Aiming skill",
-
-SkillLimiterOdysseyRP_FishingLimitingTraitList = "Perks that increase Fishing level",
-SkillLimiterOdysseyRP_FishingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Fishing skill",
-
-SkillLimiterOdysseyRP_TrappingLimitingTraitList = "Perks that increase Trapping level",
-SkillLimiterOdysseyRP_TrappingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Trapping skill",
-
-SkillLimiterOdysseyRP_ForagingLimitingTraitList = "Perks that increase Foraging level",
-SkillLimiterOdysseyRP_ForagingLimitingTraitList_tooltip = "List of perks that increase the level limit for the Foraging skill",
-
-SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Perks that increase Mechanic level",
-SkillLimiterOdysseyRP_MechanicLimitingTraitList_tooltip = "List of perks that increase the level limit for the Mechanic skill",
+Sandbox_SkillLimiterOdysseyRP_MechanicLimitingTraitList = "Perks that increase the Mechanic level",
+Sandbox_SkillLimiterOdysseyRP_MechanicLimitingTraitList_tooltip = "List of perks that increase the level limit for the Mechanic skill.",
 }
-

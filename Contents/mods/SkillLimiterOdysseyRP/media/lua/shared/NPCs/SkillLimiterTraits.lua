@@ -1,5 +1,7 @@
 local function SkillLimiterTraitsInit()
 
+	local TR_StrengthgXP = TraitFactory.addTrait("TR_StrengthgXP", getText("UI_trait_tr_strengthxp"), 0, getText("UI_trait_tr_strengthxpdesc"), true);
+	local TR_FitnessgXP = TraitFactory.addTrait("TR_FitnessgXP", getText("UI_trait_tr_fitnessxp"), 0, getText("UI_trait_tr_fitnessxpdesc"), true);
 	local TR_SprintingXP = TraitFactory.addTrait("TR_SprintingXP", getText("UI_trait_tr_sprintingxp"), 0, getText("UI_trait_tr_sprintingxpdesc"), true);
 	local TR_LightfootedXP = TraitFactory.addTrait("TR_LightfootedXP", getText("UI_trait_tr_lightfootedxp"), 0, getText("UI_trait_tr_lightfootedxpdesc"), true);
 	local TR_NimbleXP = TraitFactory.addTrait("TR_NimbleXP", getText("UI_trait_tr_nimblexp"), 0, getText("UI_trait_tr_nimblexpdesc"), true);
@@ -23,7 +25,7 @@ local function SkillLimiterTraitsInit()
 	local TR_FishingXP = TraitFactory.addTrait("TR_FishingXP", getText("UI_trait_tr_fishingxp"), 0, getText("UI_trait_tr_fishingxpdesc"), true);
 	local TR_TrappingXP = TraitFactory.addTrait("TR_TrappingXP", getText("UI_trait_tr_trappingxp"), 0, getText("UI_trait_tr_trappingxpdesc"), true);
 	local TR_ForagingXP = TraitFactory.addTrait("TR_ForagingXP", getText("UI_trait_tr_foragingxp"), 0, getText("UI_trait_tr_foragingxpdesc"), true);
-	local TR_MechanicXP = TraitFactory.addTrait("TR_MechanicXP", getText("UI_trait_tr_mechanicxp"), 0, getText("UI_trait_tr_Mechanicxpdesc"), true);
+	local TR_MechanicXP = TraitFactory.addTrait("TR_MechanicXP", getText("UI_trait_tr_mechanicxp"), 0, getText("UI_trait_tr_mechanicxpdesc"), true);
 end
 
 Events.OnGameBoot.Add(SkillLimiterTraitsInit);

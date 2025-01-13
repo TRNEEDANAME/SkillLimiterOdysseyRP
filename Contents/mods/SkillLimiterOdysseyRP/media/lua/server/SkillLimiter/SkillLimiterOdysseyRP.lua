@@ -1,177 +1,249 @@
------
---- FILE NAME : SkillLimiterOdysseyRP
---- AUTHOR : TRNEEDANAME
---- DATE OF CREATION : 2024-11-10
---- DATE OF MODIFICATION : 2024-12-19
---- PURPOSE : Limit skills
------
+---
+--- Created by Max
+--- Initial help from: Konijima#9279
+--- Profession bugfix by: ladyinkateing
+--- Created on: 10/07/2022 21:23
+---
 
 -- Mod info class
----@class SkillLimiterOdysseyRP
-SkillLimiterOdysseyRP = {}
+---@class SkillLimiter
+SkillLimiter = {}
 
 -- Mod info
-SkillLimiterOdysseyRP.modName = "Skill Limiter : The Odyssey's limit"
-SkillLimiterOdysseyRP.modVersion = "1.0"
-SkillLimiterOdysseyRP.modAuthor = "TRNEEDANAME"
-SkillLimiterOdysseyRP.modDescription = "Limits the maximum skill level of a character based on their traits and profession, and allow for surpassing it"
+SkillLimiter.modName = "SkillLimiter"
+SkillLimiter.modVersion = "1.1.1"
+SkillLimiter.modAuthor = "Max"
+SkillLimiter.modDescription = "Limits the maximum skill level of a character based on their traits and profession."
 
--- The traits that increase the limit (array) 
--- In sandbox, it's a String
-SkillLimiterOdysseyRP.allTraits = TraitFactory.getTraits()
-SkillLimiterOdysseyRP.skillLimitingTraits = {
-    SandboxVars.SkillLimiterOdysseyRP.SprintingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.LightfootedLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.NimbleLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.SneakingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.AxeLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.LongBluntLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ShortBluntLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.LongBladeLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ShortBladeLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.SpearLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.MaintenanceLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.CarpentryLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.CookingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.FarmingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.FirstAidLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ElectricalLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.MetalWorkingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.TailoringLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.AimingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ReloadingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.FishingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.TrappingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ForagingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.MechanicLimitingTrait,
-}
+-- Fetch sandbox vars
 
---- Booleans that activate or not the limiter for the skill
-SkillLimiterOdysseyRP.skillCheckEnabled = {
-    SandboxVars.SkillLimiterOdysseyRP.EnableSprint,  -- Sprinting
-    SandboxVars.SkillLimiterOdysseyRP.EnableLightfoot,  -- Lightfooted
-    SandboxVars.SkillLimiterOdysseyRP.EnableNimble,  -- Nimble
-    SandboxVars.SkillLimiterOdysseyRP.EnableSneak,  -- Sneaking
-    SandboxVars.SkillLimiterOdysseyRP.EnableAxe,  -- Axe
-    SandboxVars.SkillLimiterOdysseyRP.EnableLongblunt,  -- Long Blunt
-    SandboxVars.SkillLimiterOdysseyRP.EnableShortblunt,  -- Short Blunt
-    SandboxVars.SkillLimiterOdysseyRP.EnableLongblade,  -- Long Blade
-    SandboxVars.SkillLimiterOdysseyRP.EnableShortblade,  -- Short Blade
-    SandboxVars.SkillLimiterOdysseyRP.EnableSpear,  -- Spear
-    SandboxVars.SkillLimiterOdysseyRP.EnableMaintenance,  -- Maintenance
-    SandboxVars.SkillLimiterOdysseyRP.EnableCarpenry,  -- Carpentry
-    SandboxVars.SkillLimiterOdysseyRP.EnableCook,  -- Cooking
-    SandboxVars.SkillLimiterOdysseyRP.EnableFarm,  -- Farming
-    SandboxVars.SkillLimiterOdysseyRP.EnableFirstaid,  -- First Aid
-    SandboxVars.SkillLimiterOdysseyRP.EnableElectrical,  -- Electrical
-    SandboxVars.SkillLimiterOdysseyRP.EnableMetalwork,  -- Metal Working
-    SandboxVars.SkillLimiterOdysseyRP.EnableTailor,  -- Tailoring
-    SandboxVars.SkillLimiterOdysseyRP.EnableAim,  -- Aiming
-    SandboxVars.SkillLimiterOdysseyRP.EnableReload,  -- Reloading
-    SandboxVars.SkillLimiterOdysseyRP.EnableFish,  -- Fishing
-    SandboxVars.SkillLimiterOdysseyRP.EnableTrap,  -- Trapping
-    SandboxVars.SkillLimiterOdysseyRP.EnableForage,  -- Foraging
-    SandboxVars.SkillLimiterOdysseyRP.EnableMechanic,  -- Mechanic
-}
-
---- They give +2 upon being gained
-SkillLimiterOdysseyRP.traitXPBoosts = {
-    "TR_SprintingXP",
-    "TR_LightfootedXP",
-    "TR_NimbleXP",
-    "TR_SneakingXP",
-    "TR_AxeXP",
-    "TR_LongBluntXP",
-    "TR_ShortBluntXP",
-    "TR_LongBladeXP",
-    "TR_ShortBladeXP",
-    "TR_SpearXP",
-    "TR_MaintenanceXP",
-    "TR_CarpentryXP",
-    "TR_CookingXP",
-    "TR_FarmingXP",
-    "TR_FirstAidXP",
-    "TR_ElectricalXP",
-    "TR_MetalWorkingXP",
-    "TR_TailoringXP",
-    "TR_AimingXP",
-    "TR_ReloadingXP",
-    "TR_FishingXP",
-    "TR_TrappingXP",
-    "TR_ForagingXP",
-    "TR_MechanicXP",
-}
-
----@return integer
----@param character IsoGameCharacter
-local function SkillLimiterOdysseyRP.checkSkillLimits(player)
-    local limits = {}
-
-    for i, skillTraits in ipairs(SkillLimiterOdysseyRP.skillLimitingTraits) do
-        if SkillLimiterOdysseyRP.skillCheckEnabled[i] then
-            local limit = 0
-
-            -- Check for limiting traits
-            if skillTraits then
-                for item in string.gmatch(skillTraits, "[^;]+") do
-                    item = item:match("^%s*(.-)%s*$")
-                    local trait = SkillLimiterOdysseyRPCheckTraits(SkillLimiterOdysseyRP.allTraits, item)
-                    if trait then
-                        print("Skill Limiter : Found ", item)
-                        limit = limit + 1
-                    else
-                        print("Skill Limiter : Trait not found! ", item)
-                        -- Found no limiting traits, so we set it to 10
-                        limit = 10
-                    end
-                end
-            end
-
-            -- Check for XP boost trait, if found, increase limit by 2
-            if player:getTraits():contains(SkillLimiterOdysseyRP.traitXPBoosts[i]) then
-                print("Skill Limiter : Found ", SkillLimiterOdysseyRP.traitXPBoosts[i], "XP boosting trait")
-                limit = limit + 2
-            end
-
-            limits[i] = limit
-        else
-            limits[i] = 10  -- Skill check is disabled, so we set the limit to 10
-        end
+---@return number
+local function getAgilityBonus()
+    local bonus = SandboxVars.SkillLimiter.AgilityBonus
+    if bonus == nil then
+        bonus = 0
     end
-
-    return limits
+    return bonus
 end
 
--- Update the existing SkillLimiterOdysseyRPCheckTraits function
-function SkillLimiterOdysseyRPCheckTraits(traits, item)
-    for i=0, traits:size()-1 do
-        local trait = traits:get(i)
-        if trait:getLabel() == item then
-            return trait:getType()
+---@return number
+local function getCombatBonus()
+    local bonus = SandboxVars.SkillLimiter.CombatBonus
+    if bonus == nil then
+        bonus = 0
+    end
+    return bonus
+end
+
+---@return number
+local function getCraftingBonus()
+    local bonus = SandboxVars.SkillLimiter.CraftingBonus
+    if bonus == nil then
+        bonus = 0
+    end
+    return bonus
+end
+
+---@return number
+local function getFirearmBonus()
+    local bonus = SandboxVars.SkillLimiter.FirearmBonus
+    if bonus == nil then
+        bonus = 0
+    end
+    return bonus
+end
+
+---@return number
+local function getSurvivalistBonus()
+    local bonus = SandboxVars.SkillLimiter.SurvivalistBonus
+    if bonus == nil then
+        bonus = 0
+    end
+    return bonus
+end
+
+---@return number
+local function getPassivesBonus()
+    local bonus = SandboxVars.SkillLimiter.PassivesBonus
+    if bonus == nil then
+        bonus = 0
+    end
+    return bonus
+end
+
+--- Get the custom bonus for a perk from the SandboxVars.SkillLimiter.PerkBonuses setting.
+---@return number
+---@param perk PerkFactory.Perk
+local function getCustomPerkBonus(perk)
+    local perkBonuses = SandboxVars.SkillLimiter.PerkBonuses
+    if perkBonuses == nil then
+        perkBonuses = ""
+    end
+    -- parse perk bonuses. Semicolon separated list of perk id:bonus pairs
+    for perkBonus in perkBonuses:gmatch("[^;]+") do
+
+        local split_perk_bonus = {}
+
+        for perk_bonus_value in perkBonus:gmatch("[^:]+") do
+            table.insert(split_perk_bonus, perk_bonus_value)
+        end
+
+        -- The first value is the perk id, the second is the bonus
+        local perk_name = split_perk_bonus[1]:lower()
+        local perk_bonus_value = tonumber(split_perk_bonus[2])
+
+        if perk_name == perk:getId():lower() then
+            if perk_bonus_value == nil then
+                print("SkillLimiter: Invalid perk bonus value for perk " .. perk:getId() .. ". Please check your sandbox settings.")
+                return 0
+            end
+
+            return perk_bonus_value
         end
     end
-    return false
+
+    return 0
+end
+
+-- Mod methods
+
+--- Get the bonus for a perk based on the SandboxVars settings.
+---@return number
+---@param perk PerkFactory.Perk
+SkillLimiter.getPerkBonus = function(perk)
+    local perk_category = perk:getParent():getId():lower()
+    local perk_found = false
+    local bonus = 0
+
+    -- If perk is part of the Agility category, add the relevant bonus.
+    if perk_category == "agility" then
+        bonus = getAgilityBonus()
+        perk_found = true
+    end
+
+    -- If perk is part of the Combat category, add the relevant bonus.
+    if perk_category == "combat" then
+        bonus = getCombatBonus()
+        perk_found = true
+    end
+
+    -- If perk is part of the Crafting category, add the relevant bonus.
+    if perk_category == "crafting" then
+        bonus = getCraftingBonus()
+        perk_found = true
+    end
+
+    -- If perk is part of the Firearm category, add the relevant bonus.
+    if perk_category == "firearm" then
+        bonus = getFirearmBonus()
+        perk_found = true
+    end
+
+    -- If perk is part of the Survivalist category, add the relevant bonus.
+    if perk_category == "survivalist" then
+        bonus = getSurvivalistBonus()
+        perk_found = true
+    end
+
+    -- If perk is part of the Passiv category, add the relevant bonus.
+    if perk_category == "passiv" then
+        bonus = getPassivesBonus()
+        perk_found = true
+    end
+
+    -- If perk is not found, then we do not need to limit the skill. This is to provide compatibility (aka: don't cause errors) with other mods that add skills.
+    if not perk_found then
+        return nil
+    end
+
+    -- If the perk is in the perk bonus list, add the bonus to the total.
+    local success, perk_bonus = pcall(getCustomPerkBonus, perk)
+    if success then
+        bonus = bonus + perk_bonus
+    else
+        print("SkillLimiter: Error. Could not get custom perk bonus for perk " .. perk:getId() .. ". Please check your sandbox settings.")
+    end
+
+    return bonus
+end
+
+SkilLimiter.getTraitBonus = function (character_traits, perk)
+    local xp_trait_perk_list = {
+        TR_SprintingXP = "Sprinting",
+        TR_LightfootedXP = "Lightfooted",
+        TR_NimbleXP = "Nimble",
+        TR_SneakingXP = "Sneaking",
+        TR_AxeXP = "Axe",
+        TR_LongBluntXP = "LongBlunt",
+        TR_ShortBluntXP = "SmallBlunt",
+        TR_LongBladeXP = "LongBlade",
+        TR_ShortBladeXP = "SmallBlade",
+        TR_SpearXP = "Spear",
+        TR_MaintenanceXP = "Maintenance",
+        TR_CarpentryXP = "Woodwork",
+        TR_CookingXP = "Cooking",
+        TR_FarmingXP = "Farming",
+        TR_FirstAidXP = "Doctor",
+        TR_ElectricalXP = "Electricial",
+        TR_MetalWorkingXP = "MetalWelding",
+        TR_TailoringXP = "Tailoring",
+        TR_MechanicXP = "Mechanic",
+        TR_AimingXP = "Aiming",
+        TR_ReloadingXP = "Reloading",
+        TR_FishingXP = "Fishing",
+        TR_TrappingXP = "Trapping",
+        TR_ForagingXP = "PlantScavenging"
+    }
+
+    local bonus = 0
+
+    for i = 0, character_traits:size() - 1 do
+        local trait_str = character_traits:get(i)
+        if xp_trait_perk_list[trait_str] and xp_trait_perk_list[trait_str] == perk:getName() then
+            print("SkillLimiter: Trait bonus for " .. trait_str .. " and " .. perk:getName() .. " found. Adding +2")
+            bonus = bonus + 2
+        end
+    end
+
+    return bonus
 end
 
 --- Get the maximum skill level for a character based on their traits and profession.
 ---@return number
 ---@param character IsoGameCharacter
 ---@param perk PerkFactory.Perk
-SkillLimiterOdysseyRP.getMaxSkill = function(character, perk)
+SkillLimiter.getMaxSkill = function(character, perk)
     local character_traits = character:getTraits()
     local character_profession_str = character:getDescriptor():getProfession()
     local trait_perk_level = 0
-    local bonus = SkillLimiterOdysseyRP.checkSkillLimits(character_traits)
+
+    local bonus = SkillLimiter.getPerkBonus(perk)
+    local XP_bonus = SkillLimiter.getTraitBonus(character_traits, perk)
 
     if not bonus then
-        print("SkillLimiterOdysseyRP: Limiting to max cap since perk was not found: " .. perk:getId() .. ".")
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
+        print("SkillLimiter: Limiting to max cap since perk was not found: " .. perk:getId() .. ".")
+        return SandboxVars.SkillLimiter.PerkLvl10Cap
     end
 
     -- If bonus is 3 or more, we do not need to check whether or not we should cap the skill. Return.
-    if bonus >= 10 then
-        print("SkillLimiterOdysseyRP: Limiting to max cap since bonus >= 10: (" .. bonus .. ")")
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
+    if bonus >= 3 then
+        print("SkillLimiter: Limiting to max cap since bonus >= 10: (" .. bonus .. ")")
+        return SandboxVars.SkillLimiter.PerkLvl10Cap
+    end
+
+    -- Go through all traits and add their relevant perk level to the total
+    for i=0, character_traits:size()-1 do
+        local trait_str = character_traits:get(i);
+        local trait = TraitFactory.getTrait(trait_str)
+        local map = trait:getXPBoostMap();
+        if map then
+            local mapTable = transformIntoKahluaTable(map)
+            for trait_perk, level in pairs(mapTable) do
+                if trait_perk:getId() == perk:getId() then
+                    trait_perk_level = trait_perk_level + level:intValue()
+                end
+            end
+        end
     end
 
     local character_profession = ProfessionFactory.getProfession(character_profession_str)
@@ -190,52 +262,52 @@ SkillLimiterOdysseyRP.getMaxSkill = function(character, perk)
     end
 
     if bonus then
-        trait_perk_level = trait_perk_level + bonus
+        trait_perk_level = trait_perk_level + bonus + XP_bonus
     end
 
     if trait_perk_level <= 0 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl0Cap
+        return SandboxVars.SkillLimiter.PerkLvl0Cap
     end
     if trait_perk_level == 1 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl1Cap
+        return SandboxVars.SkillLimiter.PerkLvl1Cap
     end
     if trait_perk_level == 2 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl2Cap
+        return SandboxVars.SkillLimiter.PerkLvl2Cap
     end
     if trait_perk_level == 3 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl3Cap
+        return SandboxVars.SkillLimiter.PerkLvl3Cap
     end
-    if trait_perk_level == 4 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl4Cap
+    if trait_perk_level >= 4 then
+        return SandboxVars.SkillLimiter.PerkLvl4Cap
     end
     if trait_perk_level == 5 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl5Cap
+        return SandboxVars.SkillLimiter.PerkLvl5Cap
     end
     if trait_perk_level == 6 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl6Cap
+        return SandboxVars.SkillLimiter.PerkLvl6Cap
     end
     if trait_perk_level == 7 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl7Cap
+        return SandboxVars.SkillLimiter.PerkLvl7Cap
     end
     if trait_perk_level == 8 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl8Cap
+        return SandboxVars.SkillLimiter.PerkLvl8Cap
     end
     if trait_perk_level == 9 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl9Cap
+        return SandboxVars.SkillLimiter.PerkLvl9Cap
     end
     if trait_perk_level >= 10 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
+        return SandboxVars.SkillLimiter.PerkLvl10Cap
     end
 end
 
 ---@param character IsoGameCharacter
 ---@param perk PerkFactory.Perk
 ---@param level Integer
-SkillLimiterOdysseyRP.limitSkill = function(character, perk, level)
+SkillLimiter.limitSkill = function(character, perk, level)
     -- Get the maximum skill level for this perk, based on the character's traits & profession.
-    local max_skill = SkillLimiterOdysseyRP.getMaxSkill(character, perk)
+    local max_skill = SkillLimiter.getMaxSkill(character, perk)
     if max_skill == nil then
-        print("SkillLimiterOdysseyRP: Error. Max Skill is nil.")
+        print("SkillLimiter: Error. Max Skill is nil.")
         return
     end
 
@@ -245,16 +317,15 @@ SkillLimiterOdysseyRP.limitSkill = function(character, perk, level)
         character:setPerkLevelDebug(perk, max_skill)
         SyncXp(character)
 
-        print("SkillLimiterOdysseyRP: " .. character:getFullName() .. " leveled up " .. perk:getId() .. " and was capped to level " .. max_skill .. ".")
+        print("SkillLimiter: " .. character:getFullName() .. " leveled up " .. perk:getId() .. " and was capped to level " .. max_skill .. ".")
         HaloTextHelper.addText(character, "The " .. perk:getId() .. " skill was capped to level " .. max_skill .. ".", HaloTextHelper.getColorWhite())
     end
 end
 
-
 -- Mod event variables
 
-SkillLimiterOdysseyRP.ticks_since_check = 0
-SkillLimiterOdysseyRP.perks_leveled_up = {}
+SkillLimiter.ticks_since_check = 0
+SkillLimiter.perks_leveled_up = {}
 
 -- Mod events
 
@@ -269,7 +340,7 @@ local function add_to_table(character, perk, level, levelUp)
         return
     end
 
-    table.insert(SkillLimiterOdysseyRP.perks_leveled_up, {
+    table.insert(SkillLimiter.perks_leveled_up, {
         character = character,
         perk = perk,
         level = level
@@ -277,271 +348,17 @@ local function add_to_table(character, perk, level, levelUp)
 end
 
 local function check_table()
-    if (SkillLimiterOdysseyRP.ticks_since_check < 30) then
-        SkillLimiterOdysseyRP.ticks_since_check = SkillLimiterOdysseyRP.ticks_since_check + 1
+    if (SkillLimiter.ticks_since_check < 30) then
+        SkillLimiter.ticks_since_check = SkillLimiter.ticks_since_check + 1
         return
     end
 
-    SkillLimiterOdysseyRP.ticks_since_check = 0
+    SkillLimiter.ticks_since_check = 0
 
-    for i, v in ipairs(SkillLimiterOdysseyRP.perks_leveled_up) do
-        SkillLimiterOdysseyRP.limitSkill(v.character, v.perk, v.level)
+    for i, v in ipairs(SkillLimiter.perks_leveled_up) do
+        SkillLimiter.limitSkill(v.character, v.perk, v.level)
     end
-    SkillLimiterOdysseyRP.perks_leveled_up = {}
-end
-
--------
---- BOOKS
--------
-
-
-
-function ISReadABook:perform(...)
-
--- Sprinting Trait
-if self.item:getFullType() == "Base.TR_SprintingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_SprintingXP") then
-        traits:add("TR_SprintingXP")
-    end
-end
-
--- Lightfooted Trait
-if self.item:getFullType() == "Base.TR_LightfootedXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_LightfootedXP") then
-        traits:add("TR_LightfootedXP")
-    end
-end
-
--- Nimble Trait
-if self.item:getFullType() == "Base.TR_NimbleXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_NimbleXP") then
-        traits:add("TR_NimbleXP")
-    end
-end
-
--- Sneaking Trait
-if self.item:getFullType() == "Base.TR_SneakingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_SneakingXP") then
-        traits:add("TR_SneakingXP")
-    end
-end
-
--- Axe Trait
-if self.item:getFullType() == "Base.TR_AxeXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_AxeXP") then
-        traits:add("TR_AxeXP")
-    end
-end
-
--- LongBlunt Trait
-if self.item:getFullType() == "Base.TR_LongBluntXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_LongBluntXP") then
-        traits:add("TR_LongBluntXP")
-    end
-end
-
--- ShortBlunt Trait
-if self.item:getFullType() == "Base.TR_ShortBluntXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_ShortBluntXP") then
-        traits:add("TR_ShortBluntXP")
-    end
-end
-
--- LongBlade Trait
-if self.item:getFullType() == "Base.TR_LongBladeXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_LongBladeXP") then
-        traits:add("TR_LongBladeXP")
-    end
-end
-
--- ShortBlade Trait
-if self.item:getFullType() == "Base.TR_ShortBladeXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_ShortBladeXP") then
-        traits:add("TR_ShortBladeXP")
-    end
-end
-
--- Spear Trait
-if self.item:getFullType() == "Base.TR_SpearXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_SpearXP") then
-        traits:add("TR_SpearXP")
-    end
-end
-
--- Maintenance Trait
-if self.item:getFullType() == "Base.TR_MaintenanceXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_MaintenanceXP") then
-        traits:add("TR_MaintenanceXP")
-    end
-end
-
--- Carpentry Trait
-if self.item:getFullType() == "Base.TR_CarpentryXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_CarpentryXP") then
-        traits:add("TR_CarpentryXP")
-    end
-end
-
--- Cooking Trait
-if self.item:getFullType() == "Base.TR_CookingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_CookingXP") then
-        traits:add("TR_CookingXP")
-    end
-end
-
--- Farming Trait
-if self.item:getFullType() == "Base.TR_FarmingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_FarmingXP") then
-        traits:add("TR_FarmingXP")
-    end
-end
-
--- FirstAid Trait
-if self.item:getFullType() == "Base.TR_FirstAidXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_FirstAidXP") then
-        traits:add("TR_FirstAidXP")
-    end
-end
-
--- Electrical Trait
-if self.item:getFullType() == "Base.TR_ElectricalXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_ElectricalXP") then
-        traits:add("TR_ElectricalXP")
-    end
-end
-
--- MetalWorking Trait
-if self.item:getFullType() == "Base.TR_MetalWorkingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_MetalWorkingXP") then
-        traits:add("TR_MetalWorkingXP")
-    end
-end
-
--- Tailoring Trait
-if self.item:getFullType() == "Base.TR_TailoringXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_TailoringXP") then
-        traits:add("TR_TailoringXP")
-end
-
--- Aiming Trait
-if self.item:getFullType() == "Base.TR_AimingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_AimingXP") then
-        traits:add("TR_AimingXP")
-    end
-end
-
--- Reloading Trait
-if self.item:getFullType() == "Base.TR_ReloadingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_ReloadingXP") then
-        traits:add("TR_ReloadingXP")
-    end
-end
-
--- Fishing Trait
-if self.item:getFullType() == "Base.TR_FishingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_FishingXP") then
-        traits:add("TR_FishingXP")
-    end
-end
-
--- Trapping Trait
-if self.item:getFullType() == "Base.TR_TrappingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_TrappingXP") then
-        traits:add("TR_TrappingXP")
-    end
-end
-
--- Foraging Trait
-if self.item:getFullType() == "Base.TR_ForagingXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_ForagingXP") then
-        traits:add("TR_ForagingXP")
-    end
-end
-
--- Mechanic Trait
-if self.item:getFullType() == "Base.TR_MechanicXPMag" then
-    local traits = self.character:getTraits()
-
-    if not traits:contains("TR_MechanicXP") then
-        traits:add("TR_MechanicXP")
-    end
-end
-
-
-
-	-- -- Dextrous Trait
-	-- if self.item:getFullType() == "Base.DextrousMag" then
-	-- 	local traits = self.character:getTraits()
-	-- 	local modData = self.character:getModData()
-
-	-- 	-- Reading should always remove negative trait if it exists.
-	-- 	if traits:contains("AllThumbs") then
-	-- 		modData.StartedWithAllThumbs = true
-	-- 		traits:remove("AllThumbs")
-	-- 		-- Check if sandbox option to replace is enabled.
-	-- 		if sBvars.ReplaceTraits == true and not traits:contains("Dextrous") then
-	-- 			traits:add("Dextrous")
-	-- 		end
-
-	-- 	-- If no negative trait, check if player already has the positive trait, add it if not.
-	-- 	elseif not traits:contains("Dextrous") then
-	-- 		if not modData.StartedWithAllThumbs or sBvars.ReplaceTraits == true then
-	-- 			traits:add("Dextrous")
-	-- 		end
-
-	-- 	-- If sandbox option to remove trait is enabled, remove the trait.
-	-- 	elseif sBvars.ReadRemove == true then
-	-- 		traits:remove("Dextrous")
-	-- 	end
-	-- end
-
-	return old_ISReadABookPerform(self, ...)
+    SkillLimiter.perks_leveled_up = {}
 end
 
 local function init_check()
@@ -551,7 +368,7 @@ local function init_check()
         for j=0, Perks.getMaxIndex() - 1 do
             local perk = PerkFactory.getPerk(Perks.fromIndex(j))
             local level = character:getPerkLevel(perk)
-            SkillLimiterOdysseyRP.limitSkill(character, perk, level)
+            SkillLimiter.limitSkill(character, perk, level)
         end
     end
 end
@@ -559,11 +376,235 @@ end
 local function init()
     Events.OnTick.Remove(init)
 
-    print(SkillLimiterOdysseyRP.modName .. " " .. SkillLimiterOdysseyRP.modVersion .. " initialized.")
+    print(SkillLimiter.modName .. " " .. SkillLimiter.modVersion .. " initialized.")
 
     init_check()
 end
 
+
+
+function ISReadABook:perform(...)
+
+    -- Sprinting Trait
+    if self.item:getFullType() == "Base.TR_SprintingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_SprintingXP") then
+            traits:add("TR_SprintingXP")
+        end
+    end
+    
+    -- Lightfooted Trait
+    if self.item:getFullType() == "Base.TR_LightfootedXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_LightfootedXP") then
+            traits:add("TR_LightfootedXP")
+        end
+    end
+    
+    -- Nimble Trait
+    if self.item:getFullType() == "Base.TR_NimbleXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_NimbleXP") then
+            traits:add("TR_NimbleXP")
+        end
+    end
+    
+    -- Sneaking Trait
+    if self.item:getFullType() == "Base.TR_SneakingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_SneakingXP") then
+            traits:add("TR_SneakingXP")
+        end
+    end
+    
+    -- Axe Trait
+    if self.item:getFullType() == "Base.TR_AxeXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_AxeXP") then
+            traits:add("TR_AxeXP")
+        end
+    end
+    
+    -- LongBlunt Trait
+    if self.item:getFullType() == "Base.TR_LongBluntXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_LongBluntXP") then
+            traits:add("TR_LongBluntXP")
+        end
+    end
+    
+    -- ShortBlunt Trait
+    if self.item:getFullType() == "Base.TR_ShortBluntXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_ShortBluntXP") then
+            traits:add("TR_ShortBluntXP")
+        end
+    end
+    
+    -- LongBlade Trait
+    if self.item:getFullType() == "Base.TR_LongBladeXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_LongBladeXP") then
+            traits:add("TR_LongBladeXP")
+        end
+    end
+    
+    -- ShortBlade Trait
+    if self.item:getFullType() == "Base.TR_ShortBladeXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_ShortBladeXP") then
+            traits:add("TR_ShortBladeXP")
+        end
+    end
+    
+    -- Spear Trait
+    if self.item:getFullType() == "Base.TR_SpearXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_SpearXP") then
+            traits:add("TR_SpearXP")
+        end
+    end
+    
+    -- Maintenance Trait
+    if self.item:getFullType() == "Base.TR_MaintenanceXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_MaintenanceXP") then
+            traits:add("TR_MaintenanceXP")
+        end
+    end
+    
+    -- Carpentry Trait
+    if self.item:getFullType() == "Base.TR_CarpentryXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_CarpentryXP") then
+            traits:add("TR_CarpentryXP")
+        end
+    end
+    
+    -- Cooking Trait
+    if self.item:getFullType() == "Base.TR_CookingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_CookingXP") then
+            traits:add("TR_CookingXP")
+        end
+    end
+    
+    -- Farming Trait
+    if self.item:getFullType() == "Base.TR_FarmingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_FarmingXP") then
+            traits:add("TR_FarmingXP")
+        end
+    end
+    
+    -- FirstAid Trait
+    if self.item:getFullType() == "Base.TR_FirstAidXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_FirstAidXP") then
+            traits:add("TR_FirstAidXP")
+        end
+    end
+    
+    -- Electrical Trait
+    if self.item:getFullType() == "Base.TR_ElectricalXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_ElectricalXP") then
+            traits:add("TR_ElectricalXP")
+        end
+    end
+    
+    -- MetalWorking Trait
+    if self.item:getFullType() == "Base.TR_MetalWorkingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_MetalWorkingXP") then
+            traits:add("TR_MetalWorkingXP")
+        end
+    end
+    
+    -- Tailoring Trait
+    if self.item:getFullType() == "Base.TR_TailoringXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_TailoringXP") then
+            traits:add("TR_TailoringXP")
+    end
+    
+    -- Aiming Trait
+    if self.item:getFullType() == "Base.TR_AimingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_AimingXP") then
+            traits:add("TR_AimingXP")
+        end
+    end
+    
+    -- Reloading Trait
+    if self.item:getFullType() == "Base.TR_ReloadingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_ReloadingXP") then
+            traits:add("TR_ReloadingXP")
+        end
+    end
+    
+    -- Fishing Trait
+    if self.item:getFullType() == "Base.TR_FishingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_FishingXP") then
+            traits:add("TR_FishingXP")
+        end
+    end
+    
+    -- Trapping Trait
+    if self.item:getFullType() == "Base.TR_TrappingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_TrappingXP") then
+            traits:add("TR_TrappingXP")
+        end
+    end
+    
+    -- Foraging Trait
+    if self.item:getFullType() == "Base.TR_ForagingXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_ForagingXP") then
+            traits:add("TR_ForagingXP")
+        end
+    end -- Add this end to close the Foraging Trait if statement
+    
+    -- Mechanic Trait
+    if self.item:getFullType() == "Base.TR_MechanicXPMag" then
+        local traits = self.character:getTraits()
+    
+        if not traits:contains("TR_MechanicXP") then
+            traits:add("TR_MechanicXP")
+        end
+    end
+    
+    
+    return old_ISReadABookPerform(self, ...)
+    end
+    end
+
 Events.LevelPerk.Add(add_to_table)
 Events.OnTick.Add(check_table)
-Events.OnTick.Add(init)
+Events.OnTick.Add(init);
