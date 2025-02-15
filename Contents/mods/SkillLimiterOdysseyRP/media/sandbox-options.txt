@@ -1,6 +1,32 @@
 VERSION = 1,
 
-option SkillLimiterOdysseyRP.SprintingLimitingTrait
+option SkillLimiterOdysseyRP_SkillLimitIncrease
+{
+    type = integer,
+    default = 2,
+    min = 0,
+    max = 10,
+    page = SkillLimiterOdysseyRP,
+    traits = SkillLimiterOdysseyRP_SkillLimitIncrease,
+}
+
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableStrengthLimit
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableStrengthLimit,
+}
+
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableFitnessLimit
+{
+    type = boolean,
+    default = true,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_EnableFitnessLimit,
+}
+
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableSprintingLimit
 {
     type = boolean,
     default = true,
@@ -8,7 +34,7 @@ option SkillLimiterOdysseyRP.SprintingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableSprintLimit,
 }
 
-option SkillLimiterOdysseyRP.LightfootedLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableLightfootedLimit
 {
     type = boolean,
     default = true,
@@ -16,7 +42,7 @@ option SkillLimiterOdysseyRP.LightfootedLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableLightfootLimit,
 }
 
-option SkillLimiterOdysseyRP.NimbleLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableNimbleLimit
 {
     type = boolean,
     default = true,
@@ -24,7 +50,7 @@ option SkillLimiterOdysseyRP.NimbleLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableNimbleLimit,
 }
 
-option SkillLimiterOdysseyRP.SneakingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableSneakingLimit
 {
     type = boolean,
     default = true,
@@ -32,7 +58,7 @@ option SkillLimiterOdysseyRP.SneakingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableSneakingLimit,
 }
 
-option SkillLimiterOdysseyRP.AxeLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableAxeLimit
 {
     type = boolean,
     default = true,
@@ -40,7 +66,7 @@ option SkillLimiterOdysseyRP.AxeLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableAxeLimit,
 }
 
-option SkillLimiterOdysseyRP.LongBluntLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableLongBluntLimit
 {
     type = boolean,
     default = true,
@@ -48,7 +74,7 @@ option SkillLimiterOdysseyRP.LongBluntLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableLongBluntLimit,
 }
 
-option SkillLimiterOdysseyRP.ShortBluntLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableShortBluntLimit
 {
     type = boolean,
     default = true,
@@ -56,7 +82,7 @@ option SkillLimiterOdysseyRP.ShortBluntLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableShortBluntLimit,
 }
 
-option SkillLimiterOdysseyRP.LongBladeLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableLongBladeLimit
 {
     type = boolean,
     default = true,
@@ -64,7 +90,7 @@ option SkillLimiterOdysseyRP.LongBladeLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableLongBladeLimit,
 }
 
-option SkillLimiterOdysseyRP.ShortBladeLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableShortBladeLimit
 {
     type = boolean,
     default = true,
@@ -72,7 +98,7 @@ option SkillLimiterOdysseyRP.ShortBladeLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableShortBladeLimit,
 }
 
-option SkillLimiterOdysseyRP.SpearLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableSpearLimit
 {
     type = boolean,
     default = true,
@@ -80,7 +106,7 @@ option SkillLimiterOdysseyRP.SpearLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableSpearLimit,
 }
 
-option SkillLimiterOdysseyRP.MaintenanceLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableMaintenanceLimit
 {
     type = boolean,
     default = true,
@@ -88,7 +114,7 @@ option SkillLimiterOdysseyRP.MaintenanceLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableMaintenanceLimit,
 }
 
-option SkillLimiterOdysseyRP.CarpentryLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableCarpentryLimit
 {
     type = boolean,
     default = true,
@@ -96,7 +122,7 @@ option SkillLimiterOdysseyRP.CarpentryLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableCarpentryLimit,
 }
 
-option SkillLimiterOdysseyRP.CookingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableCookingLimit
 {
     type = boolean,
     default = true,
@@ -104,7 +130,7 @@ option SkillLimiterOdysseyRP.CookingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableCookingLimi,
 }
 
-option SkillLimiterOdysseyRP.FarmingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableFarmingLimit
 {
     type = boolean,
     default = true,
@@ -112,7 +138,7 @@ option SkillLimiterOdysseyRP.FarmingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableFarmingLimit,
 }
 
-option SkillLimiterOdysseyRP.FirstAidLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableFirstAidLimit
 {
     type = boolean,
     default = true,
@@ -120,7 +146,7 @@ option SkillLimiterOdysseyRP.FirstAidLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableFirstAidLimit,
 }
 
-option SkillLimiterOdysseyRP.ElectricalLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableElectricalLimit
 {
     type = boolean,
     default = true,
@@ -128,7 +154,7 @@ option SkillLimiterOdysseyRP.ElectricalLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableElectricalLimit,
 }
 
-option SkillLimiterOdysseyRP.MetalWorkingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableMetalWorkingLimit
 {
     type = boolean,
     default = true,
@@ -136,7 +162,7 @@ option SkillLimiterOdysseyRP.MetalWorkingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableMetalWorkingLimit,
 }
 
-option SkillLimiterOdysseyRP.TailoringLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableTailoringLimit
 {
     type = boolean,
     default = true,
@@ -144,7 +170,7 @@ option SkillLimiterOdysseyRP.TailoringLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableTailoringLimit,
 }
 
-option SkillLimiterOdysseyRP.AimingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableAimingLimit
 {
     type = boolean,
     default = true,
@@ -152,7 +178,7 @@ option SkillLimiterOdysseyRP.AimingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableAimingLimit,
 }
 
-option SkillLimiterOdysseyRP.ReloadingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableReloadingLimit
 {
     type = boolean,
     default = true,
@@ -160,7 +186,7 @@ option SkillLimiterOdysseyRP.ReloadingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableReloadingLimit,
 }
 
-option SkillLimiterOdysseyRP.FishingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableFishingLimit
 {
     type = boolean,
     default = true,
@@ -168,7 +194,7 @@ option SkillLimiterOdysseyRP.FishingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableFishingLimit,
 }
 
-option SkillLimiterOdysseyRP.TrappingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableTrappingLimit
 {
     type = boolean,
     default = true,
@@ -176,7 +202,7 @@ option SkillLimiterOdysseyRP.TrappingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableTrappingLimit,
 }
 
-option SkillLimiterOdysseyRP.ForagingLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableForagingLimit
 {
     type = boolean,
     default = true,
@@ -184,7 +210,7 @@ option SkillLimiterOdysseyRP.ForagingLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableForagingLimit,
 }
 
-option SkillLimiterOdysseyRP.MechanicLimitingTrait
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EnableMechanicLimit
 {
     type = boolean,
     default = true,
@@ -192,45 +218,60 @@ option SkillLimiterOdysseyRP.MechanicLimitingTrait
     translation = SkillLimiterOdysseyRP_EnableMechanicLimit,
 }
 
-
-
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EmptyBox1
+{
+	type = boolean,
+    default = false,
+	page = SkillLimiterOdysseyRP, 
+    translation = SkillLimiterOdysseyRP_EmptyBox,
+}
 
 option SkillLimiterOdysseyRP.PerkLvl0Cap
 {
     type = integer,
     default = 4,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
-    translation = SkillLimiterOdysseyRP_PerkLvl0Cap
+    translation = SkillLimiterOdysseyRP_PerkLvl0Cap,
 }
 
 option SkillLimiterOdysseyRP.PerkLvl1Cap
 {
     type = integer,
     default = 5,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
-    translation = SkillLimiterOdysseyRP_PerkLvl1Cap
+    translation = SkillLimiterOdysseyRP_PerkLvl1Cap,
 }
 
 option SkillLimiterOdysseyRP.PerkLvl2Cap
 {
     type = integer,
     default = 8,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
-    translation = SkillLimiterOdysseyRP_PerkLvl2Cap
+    translation = SkillLimiterOdysseyRP_PerkLvl2Cap,
 }
 
 option SkillLimiterOdysseyRP.PerkLvl3Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
-    translation = SkillLimiterOdysseyRP_PerkLvl3Cap
+    translation = SkillLimiterOdysseyRP_PerkLvl3Cap,
 }
 
 option SkillLimiterOdysseyRP.PerkLvl4Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_PerkLvl4Cap,
 }
@@ -239,6 +280,8 @@ option SkillLimiterOdysseyRP.PerkLvl5Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_PerkLvl5Cap,
 }
@@ -247,6 +290,8 @@ option SkillLimiterOdysseyRP.PerkLvl6Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_PerkLvl6Cap,
 }
@@ -255,6 +300,8 @@ option SkillLimiterOdysseyRP.PerkLvl7Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_PerkLvl7Cap,
 }
@@ -263,6 +310,8 @@ option SkillLimiterOdysseyRP.PerkLvl8Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_PerkLvl8Cap,
 }
@@ -271,6 +320,8 @@ option SkillLimiterOdysseyRP.PerkLvl9Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_PerkLvl9Cap,
 }
@@ -279,9 +330,36 @@ option SkillLimiterOdysseyRP.PerkLvl10Cap
 {
     type = integer,
     default = 10,
+    min = 0,
+    max = 10,
     page = SkillLimiterOdysseyRP,
     translation = SkillLimiterOdysseyRP_PerkLvl10Cap,
 }
+
+option SkillLimiterOdysseyRP.SkillLimiterOdysseyRP_EmptyBox2
+{
+	type = boolean,
+    default = false,
+	page = SkillLimiterOdysseyRP, 
+    translation = SkillLimiterOdysseyRP_EmptyBox,
+}
+
+option SkillLimiterOdysseyRP.StrengthLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_StrengthLimitingTraitList,
+}
+
+option SkillLimiterOdysseyRP.FitnessLimitingTrait
+{
+    type = string,
+    default = Delimit the list with semicolons,
+    page = SkillLimiterOdysseyRP,
+    translation = SkillLimiterOdysseyRP_FitnessLimitingTraitList,
+}
+
 
 option SkillLimiterOdysseyRP.SprintingLimitingTrait
 {
@@ -482,6 +560,7 @@ option SkillLimiterOdysseyRP.MechanicLimitingTrait
 ------------------
 ----- VANILLA
 ------------------
+
 -- SkillLimiterOdysseyRP_SprintingLimitingTraitList = "Athletic; Fit; Runner; "
 -- SkillLimiterOdysseyRP_LightfootedLimitingTraitList = "Gymnast; "
 -- SkillLimiterOdysseyRP_NimbleLimitingTraitList = "Gymnast; "

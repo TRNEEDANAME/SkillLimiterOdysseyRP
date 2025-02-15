@@ -16,99 +16,92 @@ SkillLimiterOdysseyRP.modVersion = "1.0"
 SkillLimiterOdysseyRP.modAuthor = "TRNEEDANAME"
 SkillLimiterOdysseyRP.modDescription = "Limits the maximum skill level of a character based on their traits and profession, and allow for surpassing it"
 
--- The traits that increase the limit (array) 
--- In sandbox, it's a String
-SkillLimiterOdysseyRP.allTraits = TraitFactory.getTraits()
-SkillLimiterOdysseyRP.skillLimitingTraits = {
-    SandboxVars.SkillLimiterOdysseyRP.SprintingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.LightfootedLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.NimbleLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.SneakingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.AxeLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.LongBluntLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ShortBluntLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.LongBladeLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ShortBladeLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.SpearLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.MaintenanceLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.CarpentryLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.CookingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.FarmingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.FirstAidLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ElectricalLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.MetalWorkingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.TailoringLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.AimingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ReloadingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.FishingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.TrappingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.ForagingLimitingTrait,
-    SandboxVars.SkillLimiterOdysseyRP.MechanicLimitingTrait,
-}
+SkillLimiterOdysseyRP.allTraits = getTraits()
 
---- Booleans that activate or not the limiter for the skill
-SkillLimiterOdysseyRP.skillCheckEnabled = {
-    SandboxVars.SkillLimiterOdysseyRP.EnableSprint,  -- Sprinting
-    SandboxVars.SkillLimiterOdysseyRP.EnableLightfoot,  -- Lightfooted
-    SandboxVars.SkillLimiterOdysseyRP.EnableNimble,  -- Nimble
-    SandboxVars.SkillLimiterOdysseyRP.EnableSneak,  -- Sneaking
-    SandboxVars.SkillLimiterOdysseyRP.EnableAxe,  -- Axe
-    SandboxVars.SkillLimiterOdysseyRP.EnableLongblunt,  -- Long Blunt
-    SandboxVars.SkillLimiterOdysseyRP.EnableShortblunt,  -- Short Blunt
-    SandboxVars.SkillLimiterOdysseyRP.EnableLongblade,  -- Long Blade
-    SandboxVars.SkillLimiterOdysseyRP.EnableShortblade,  -- Short Blade
-    SandboxVars.SkillLimiterOdysseyRP.EnableSpear,  -- Spear
-    SandboxVars.SkillLimiterOdysseyRP.EnableMaintenance,  -- Maintenance
-    SandboxVars.SkillLimiterOdysseyRP.EnableCarpenry,  -- Carpentry
-    SandboxVars.SkillLimiterOdysseyRP.EnableCook,  -- Cooking
-    SandboxVars.SkillLimiterOdysseyRP.EnableFarm,  -- Farming
-    SandboxVars.SkillLimiterOdysseyRP.EnableFirstaid,  -- First Aid
-    SandboxVars.SkillLimiterOdysseyRP.EnableElectrical,  -- Electrical
-    SandboxVars.SkillLimiterOdysseyRP.EnableMetalwork,  -- Metal Working
-    SandboxVars.SkillLimiterOdysseyRP.EnableTailor,  -- Tailoring
-    SandboxVars.SkillLimiterOdysseyRP.EnableAim,  -- Aiming
-    SandboxVars.SkillLimiterOdysseyRP.EnableReload,  -- Reloading
-    SandboxVars.SkillLimiterOdysseyRP.EnableFish,  -- Fishing
-    SandboxVars.SkillLimiterOdysseyRP.EnableTrap,  -- Trapping
-    SandboxVars.SkillLimiterOdysseyRP.EnableForage,  -- Foraging
-    SandboxVars.SkillLimiterOdysseyRP.EnableMechanic,  -- Mechanic
-}
+---@return boolean[]
+---@param perk PerkFactory.Perk
+--- We get the array
+SkillLimiterOdysseyRP.getActivePerk = function(perk)
+    local perk_name_sandbox = {
+        SkillLimiterOdysseyRP.SkillLimiter_EnableStrengthLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableFitnessLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableSprintingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableLightfootedLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableNimbleLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableSneakingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableAxeLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableLongBluntLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableShortBluntLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableLongBladeLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableShortBladeLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableSpearLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableMaintenanceLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableCarpentryLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableCookingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableFarmingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableFirstAidLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableElectricalLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableMetalWorkingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableTailoringLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableAimingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableReloadingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableFishingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableTrappingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableForagingLimit,
+        SkillLimiterOdysseyRP.SkillLimiter_EnableMechanicLimit,
+    }
 
---- They give +2 upon being gained
-SkillLimiterOdysseyRP.traitXPBoosts = {
-    "TR_SprintingXP",
-    "TR_LightfootedXP",
-    "TR_NimbleXP",
-    "TR_SneakingXP",
-    "TR_AxeXP",
-    "TR_LongBluntXP",
-    "TR_ShortBluntXP",
-    "TR_LongBladeXP",
-    "TR_ShortBladeXP",
-    "TR_SpearXP",
-    "TR_MaintenanceXP",
-    "TR_CarpentryXP",
-    "TR_CookingXP",
-    "TR_FarmingXP",
-    "TR_FirstAidXP",
-    "TR_ElectricalXP",
-    "TR_MetalWorkingXP",
-    "TR_TailoringXP",
-    "TR_AimingXP",
-    "TR_ReloadingXP",
-    "TR_FishingXP",
-    "TR_TrappingXP",
-    "TR_ForagingXP",
-    "TR_MechanicXP",
-}
+    local res = {}
+
+    for i = 1, #perk_name_sandbox do
+        if perk_name_sandbox[i] == true then
+            table.insert(res, true)
+        else
+            table.insert(res, false)
+        end
+    end
+    return res
+end
 
 ---@return integer
 ---@param character IsoGameCharacter
-local function SkillLimiterOdysseyRP.checkSkillLimits(player)
+---@param perk PerkFactory.Perk
+function SkillLimiterOdysseyRP.checkSkillLimits(character, perk)
     local limits = {}
+    local list_perk = {
+        "Strength",
+        "Fitness",
+        "Sprinting",
+        "Sneak",
+        "Lightfoot",
+        "Nimble",
+        "Fishing",
+        "Farming",
+        "PlantScavenging",
+        "Trapping",
+        "Doctor",
+        "Tailoring",
+        "Cooking",
+        "Maintenance",
+        "Woodwork",
+        "Electricity",
+        "Mechanics",
+        "MetalWelding",
+        "Blunt",
+        "SmallBlade",
+        "SmallBlunt",
+        "Axe",
+        "Spear",
+        "LongBlade",
+        "Aiming",
+        "Reloading",
+        "Woodcutting",
+    }
+
+    local
 
     for i, skillTraits in ipairs(SkillLimiterOdysseyRP.skillLimitingTraits) do
-        if SkillLimiterOdysseyRP.skillCheckEnabled[i] then
+        if SkillLimiterOdysseyRP.getActivePerk(perk)[i] then
             local limit = 0
 
             -- Check for limiting traits
@@ -121,28 +114,27 @@ local function SkillLimiterOdysseyRP.checkSkillLimits(player)
                         limit = limit + 1
                     else
                         print("Skill Limiter : Trait not found! ", item)
-                        -- Found no limiting traits, so we set it to 10
-                        limit = 10
+                        -- Found no limiting traits, so we set it to 4
+                        limit = 4
                     end
                 end
             end
 
             -- Check for XP boost trait, if found, increase limit by 2
-            if player:getTraits():contains(SkillLimiterOdysseyRP.traitXPBoosts[i]) then
+            if character:getTraits():contains(SkillLimiterOdysseyRP.traitXPBoosts[i]) then
                 print("Skill Limiter : Found ", SkillLimiterOdysseyRP.traitXPBoosts[i], "XP boosting trait")
-                limit = limit + 2
+                limit = limit + SandboxVars.SkillLimiterOdysseyRP_SkillLimitIncrease
             end
 
             limits[i] = limit
         else
-            limits[i] = 10  -- Skill check is disabled, so we set the limit to 10
+            limits[i] = 4  -- Skill check is disabled, so we set the limit to 4
         end
     end
 
     return limits
 end
 
--- Update the existing SkillLimiterOdysseyRPCheckTraits function
 function SkillLimiterOdysseyRPCheckTraits(traits, item)
     for i=0, traits:size()-1 do
         local trait = traits:get(i)
@@ -152,15 +144,55 @@ function SkillLimiterOdysseyRPCheckTraits(traits, item)
     end
     return false
 end
-
 --- Get the maximum skill level for a character based on their traits and profession.
 ---@return number
 ---@param character IsoGameCharacter
 ---@param perk PerkFactory.Perk
-SkillLimiterOdysseyRP.getMaxSkill = function(character, perk)
+SkillLimiter.getMaxSkill = function(character, perk)
     local character_traits = character:getTraits()
     local character_profession_str = character:getDescriptor():getProfession()
     local trait_perk_level = 0
+
+    local bonus = SkillLimiter.getPerkBonus(perk)
+    local perk_active = SkillLimiter.getActivePerk(perk)
+    local list_perk = {
+        "Strength",
+        "Fitness",
+        "Sprinting",
+        "Sneak",
+        "Lightfoot",
+        "Nimble",
+        "Fishing",
+        "Farming",
+        "PlantScavenging",
+        "Trapping",
+        "Doctor",
+        "Tailoring",
+        "Cooking",
+        "Maintenance",
+        "Woodwork",
+        "Electricity",
+        "Mechanics",
+        "MetalWelding",
+        "Blunt",
+        "SmallBlade",
+        "SmallBlunt",
+        "Axe",
+        "Spear",
+        "LongBlade",
+        "Aiming",
+        "Reloading",
+        "Woodcutting",
+    }
+
+    -- Check if the perk is active
+    for i = 1, #list_perk do
+        if list_perk[i] == perk:getId() and not perk_active[i] then
+            print("SkillLimiter: the perk" .. perk:getId() .. " is not active, and therefore will not be limited.")
+            return SandboxVars.SkillLimiter.PerkLvl3Cap
+        end
+    end
+    
     local bonus = SkillLimiterOdysseyRP.checkSkillLimits(character_traits)
 
     if not bonus then
@@ -168,7 +200,7 @@ SkillLimiterOdysseyRP.getMaxSkill = function(character, perk)
         return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
     end
 
-    -- If bonus is 3 or more, we do not need to check whether or not we should cap the skill. Return.
+    -- If bonus is 10, we do not need to check whether or not we should cap the skill. Return.
     if bonus >= 10 then
         print("SkillLimiterOdysseyRP: Limiting to max cap since bonus >= 10: (" .. bonus .. ")")
         return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
@@ -223,9 +255,7 @@ SkillLimiterOdysseyRP.getMaxSkill = function(character, perk)
     if trait_perk_level == 9 then
         return SandboxVars.SkillLimiterOdysseyRP.PerkLvl9Cap
     end
-    if trait_perk_level >= 10 then
-        return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
-    end
+    return SandboxVars.SkillLimiterOdysseyRP.PerkLvl10Cap
 end
 
 ---@param character IsoGameCharacter
@@ -249,7 +279,6 @@ SkillLimiterOdysseyRP.limitSkill = function(character, perk, level)
         HaloTextHelper.addText(character, "The " .. perk:getId() .. " skill was capped to level " .. max_skill .. ".", HaloTextHelper.getColorWhite())
     end
 end
-
 
 -- Mod event variables
 
@@ -276,6 +305,7 @@ local function add_to_table(character, perk, level, levelUp)
     })
 end
 
+
 local function check_table()
     if (SkillLimiterOdysseyRP.ticks_since_check < 30) then
         SkillLimiterOdysseyRP.ticks_since_check = SkillLimiterOdysseyRP.ticks_since_check + 1
@@ -289,6 +319,142 @@ local function check_table()
     end
     SkillLimiterOdysseyRP.perks_leveled_up = {}
 end
+
+local function isSkillCheckEnabled(skillIndex)
+    return SkillLimiterOdysseyRP.skillCheckEnabled[skillIndex]
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledStrength(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.STRENGTH)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledFitness(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.FITNESS)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledSprint(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.SPRINTING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledLightfoot(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.LIGHTFOOTED)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledNimble(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.NIMBLE)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledSneak(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.SNEAKING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledAxe(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.AXE)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledLongBlunt(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.LONG_BLUNT)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledShortBlunt(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.SHORT_BLUNT)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledLongBlade(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.LONG_BLADE)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledShortBlade(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.SHORT_BLADE)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledSpear(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.SPEAR)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledMaintenance(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.MAINTENANCE)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledCarpentry(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.CARPENTRY)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledCook(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.COOKING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledFarm(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.FARMING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledFirstAid(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.FIRST_AID)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledElectrical(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.ELECTRICAL)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledMetalWorker(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.METALWORKING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledTailor(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.TAILORING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledAim(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.AIMING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledReload(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.RELOADING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledFish(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.FISHING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledTrap(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.TRAPPING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledForage(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.FORAGING)
+end
+
+---@param player IsoGameCharacter | IsoPlayer
+function OnCanPerformCheckSkillEnabledMechanic(recipe, player)
+    return isSkillCheckEnabled(SkillLimiterOdysseyRP.SKILL_INDICES.MECHANIC)
+end
+
+
 
 -------
 --- BOOKS
@@ -502,7 +668,7 @@ if self.item:getFullType() == "Base.TR_ForagingXPMag" then
     if not traits:contains("TR_ForagingXP") then
         traits:add("TR_ForagingXP")
     end
-end
+end -- Add this end to close the Foraging Trait if statement
 
 -- Mechanic Trait
 if self.item:getFullType() == "Base.TR_MechanicXPMag" then
@@ -514,41 +680,15 @@ if self.item:getFullType() == "Base.TR_MechanicXPMag" then
 end
 
 
-
-	-- -- Dextrous Trait
-	-- if self.item:getFullType() == "Base.DextrousMag" then
-	-- 	local traits = self.character:getTraits()
-	-- 	local modData = self.character:getModData()
-
-	-- 	-- Reading should always remove negative trait if it exists.
-	-- 	if traits:contains("AllThumbs") then
-	-- 		modData.StartedWithAllThumbs = true
-	-- 		traits:remove("AllThumbs")
-	-- 		-- Check if sandbox option to replace is enabled.
-	-- 		if sBvars.ReplaceTraits == true and not traits:contains("Dextrous") then
-	-- 			traits:add("Dextrous")
-	-- 		end
-
-	-- 	-- If no negative trait, check if player already has the positive trait, add it if not.
-	-- 	elseif not traits:contains("Dextrous") then
-	-- 		if not modData.StartedWithAllThumbs or sBvars.ReplaceTraits == true then
-	-- 			traits:add("Dextrous")
-	-- 		end
-
-	-- 	-- If sandbox option to remove trait is enabled, remove the trait.
-	-- 	elseif sBvars.ReadRemove == true then
-	-- 		traits:remove("Dextrous")
-	-- 	end
-	-- end
-
-	return old_ISReadABookPerform(self, ...)
+return old_ISReadABookPerform(self, ...)
+end
 end
 
 local function init_check()
     local character = getPlayer()
 
     if character then
-        for j=0, Perks.getMaxIndex() - 1 do
+        for j = 0, Perks.getMaxIndex() - 1 do
             local perk = PerkFactory.getPerk(Perks.fromIndex(j))
             local level = character:getPerkLevel(perk)
             SkillLimiterOdysseyRP.limitSkill(character, perk, level)

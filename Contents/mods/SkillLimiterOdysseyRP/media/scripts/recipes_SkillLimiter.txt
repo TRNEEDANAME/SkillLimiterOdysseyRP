@@ -11,6 +11,34 @@ module Base
         Result: TR_SkillXPBook_Base,
     }
 
+    recipe Write Strength XP Book
+    {
+        TR_SkillXPBook_Base,
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_StrengthXPMag,
+        RemoveResultItem:false,
+        SkillRequired:Sprinting=10,
+
+        Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledStrength,
+        StopOnWalk:true,
+    }
+
+    recipe Write Fitness XP Book
+    {
+        TR_SkillXPBook_Base,
+        keep [Recipe.GetItemTypes.Write],
+
+        Result:TR_FitnessXPMag,
+        RemoveResultItem:false,
+        SkillRequired:Sprinting=10,
+
+        Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledFitness,
+        StopOnWalk:true,
+    }
+
     recipe Write Sprinting XP Book
     {
         TR_SkillXPBook_Base,
@@ -21,6 +49,7 @@ module Base
         SkillRequired:Sprinting=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledSprint,
         StopOnWalk:true,
     }
 
@@ -34,6 +63,7 @@ module Base
         SkillRequired:Lightfoot=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledLightfoot,
         StopOnWalk:true,
     }
 
@@ -47,6 +77,7 @@ module Base
         SkillRequired:Nimble=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledNimble,
         StopOnWalk:true,
     }
 
@@ -60,6 +91,7 @@ module Base
         SkillRequired:Sneak=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledSneak,
         StopOnWalk:true,
     }
 
@@ -73,6 +105,7 @@ module Base
         SkillRequired:Woodcutting=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledAxe,
         StopOnWalk:true,
     }
 
@@ -86,6 +119,7 @@ module Base
         SkillRequired:LongBlunt=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledLongBlunt,
         StopOnWalk:true,
     }
 
@@ -99,6 +133,7 @@ module Base
         SkillRequired:SmallBlunt=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledShortBlunt,
         StopOnWalk:true,
     }
 
@@ -112,6 +147,7 @@ module Base
         SkillRequired:LongBlade=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledLongBlade,
         StopOnWalk:true,
     }
 
@@ -125,6 +161,7 @@ module Base
         SkillRequired:SmallBlade=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledShortBlade,
         StopOnWalk:true,
     }
 
@@ -138,6 +175,7 @@ module Base
         SkillRequired:Spear=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledSpear,
         StopOnWalk:true,
     }
 
@@ -151,6 +189,7 @@ module Base
         SkillRequired:Maintenance=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledMaintenance,
         StopOnWalk:true,
     }
 
@@ -164,6 +203,7 @@ module Base
         SkillRequired:Carpentry=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledCarpentry,
         StopOnWalk:true,
     }
 
@@ -177,6 +217,7 @@ module Base
         SkillRequired:Cooking=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledCook,
         StopOnWalk:true,
     }
 
@@ -190,6 +231,7 @@ module Base
         SkillRequired:Farming=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledFarm,
         StopOnWalk:true,
     }
 
@@ -203,6 +245,7 @@ module Base
         SkillRequired:Doctor=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledFirstAid,
         StopOnWalk:true,
     }
 
@@ -216,6 +259,7 @@ module Base
         SkillRequired:Electricity=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledElectrical,
         StopOnWalk:true,
     }
 
@@ -229,6 +273,7 @@ module Base
         SkillRequired:MetalWelding=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledMetalWorker,
         StopOnWalk:true,
     }
 
@@ -242,6 +287,7 @@ module Base
         SkillRequired:Tailoring=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledTailor,
         StopOnWalk:true,
     }
 
@@ -255,6 +301,7 @@ module Base
         SkillRequired:Aiming=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledAim,
         StopOnWalk:true,
     }
 
@@ -268,6 +315,7 @@ module Base
         SkillRequired:Reloading=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledReload,
         StopOnWalk:true,
     }
 
@@ -281,6 +329,7 @@ module Base
         SkillRequired:Fishing=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledFish,
         StopOnWalk:true,
     }
 
@@ -294,6 +343,7 @@ module Base
         SkillRequired:Trapping=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledTrap,
         StopOnWalk:true,
     }
 
@@ -307,6 +357,7 @@ module Base
         SkillRequired:PlantScavenging=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledForage,
         StopOnWalk:true,
     }
 
@@ -320,6 +371,7 @@ module Base
         SkillRequired:Mechanics=10,
 
         Time:50.0,
+        OnCanPerform:OnCanPerformCheckSkillEnabledMechanic,
         StopOnWalk:true,
     }
 }

@@ -13,8 +13,34 @@ module Base
 		DisplayName  	 = A standard book,
 		Icon             = Book,
 		StaticModel      = Normal,
-		WorldStaticModel = GTMNutritionist_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 
+	}
+
+	item TR_StrengthXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = A sprinting guide, by Oliver,
+		Icon             = Book,
+		TeachedRecipes   = TR_StrengthXP,
+		StaticModel      = Book,
+		WorldStaticModel = BookLightBlue_Ground,
+	}
+
+		item TR_FitnessXPMag
+	{
+		NumberOfPages	=	220,
+		DisplayCategory  = SkillBook,
+		Weight	         = 0.1,
+		Type	         = Literature,
+		DisplayName  	 = A sprinting guide, by Oliver,
+		Icon             = Book,
+		TeachedRecipes   = TR_FitnessXP,
+		StaticModel      = Book,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 
 	item TR_SprintingXPMag
@@ -24,10 +50,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = A sprinting guide, by Oliver,
-		Icon             = NutritionistMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_SprintingXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMNutritionist_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 		
 	item TR_LightfootedXPMag
@@ -37,10 +63,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = Go fast, go silently,
-		Icon             = OrganizedMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_LightfootedXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMOrganized_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_NimbleXPMag
@@ -50,10 +76,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = How to be quick on your feet,
-		Icon             = SpeedDemonMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_NimbleXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMSpeedDemon_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_SneakingXPMag
@@ -63,10 +89,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = A sneaky as a snake,
-		Icon             = OutdoorsmanMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_SneakingXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMOutdoorsman_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_AxeXPMag
@@ -76,10 +102,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = Get axed,
-		Icon             = HandyMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_AxeXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMHandy_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_LongBluntXPMag
@@ -89,10 +115,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = How to be a good baseball player,
-		Icon             = FastReaderMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_LongBluntXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMFastReader_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_ShortBluntXPMag
@@ -102,10 +128,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = How to hammer your point,
-		Icon             = FastLearnerMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_ShortBluntXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMFastLearner_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_LongBladeXPMag
@@ -115,10 +141,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = Use a machete like never before,
-		Icon             = AxeManMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_LongBladeXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMAxeMan_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_ShortBladeXPMag
@@ -128,10 +154,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = How to become british,
-		Icon             = BurglarMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_ShortBladeXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMBurglar_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 
 	item TR_SpearXPMag
@@ -141,10 +167,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = Reject society, go back to caveman,
-		Icon             = GracefulMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_SpearXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMGraceful_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 
 	item TR_MaintenanceXPMag
@@ -154,10 +180,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = How to maintain everything, except relationship,
-		Icon             = DextrousMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_MaintenanceXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMDextrous_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 	
 	item TR_CarpentryXPMag
@@ -167,10 +193,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = Be as cool as Woodcut,
-		Icon             = InconspicuousMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_CarpentryXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMInconspicuous_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 
 	item TR_CookingXPMag
@@ -180,10 +206,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = How to make food that's actually good,
-		Icon             = KeenHearingMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_CookingXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMKeenHearing_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
 	}
 
     item TR_FarmingXPMag 
@@ -193,10 +219,10 @@ module Base
 		Weight	         = 0.1,
 		Type	         = Literature,
 		DisplayName  	 = How to become a man of honest work,
-		Icon             = KeenHearingMag,
+		Icon             = Book,
 		TeachedRecipes   = TR_FarmingXP,
 		StaticModel      = Book,
-		WorldStaticModel = GTMKeenHearing_Ground,
+		WorldStaticModel = BookLightBlue_Ground,
     }
 
     item TR_FirstAidXPMag
@@ -206,10 +232,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Become a surgeon,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_FirstAidXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_ElectricalXPMag
     {
@@ -218,10 +244,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Conquer light,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_ElectricalXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_MetalWorkingXPMag
     {
@@ -230,10 +256,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = How to use a blowtorch without burning yourself,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_MetalWorkingXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_TailoringXPMag
     {
@@ -242,10 +268,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Everyone need clothes,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_TailoringXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_AimingXPMag
     {
@@ -254,10 +280,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Become a cop in a day (sponsored by the KPD),
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_AimingXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_ReloadingXPMag
     {
@@ -266,10 +292,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Become a cop in a day  Part 2(sponsored by the KPD),
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_ReloadingXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_FishingXPMag
     {
@@ -278,10 +304,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Catch everything,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_FishingXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_TrappingXPMag
     {
@@ -290,10 +316,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Trap everything,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_TrappingXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_ForagingXPMag
     {
@@ -302,10 +328,10 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Find everything,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_ForagingXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
     item TR_MechanicXPMag
     {
@@ -314,9 +340,9 @@ module Base
         Weight = 0.1,
         Type = Literature,
         DisplayName = Repair cars, only to destroy them,
-        Icon = mag,
+        Icon = Book,
         TeachedRecipes = TR_MechanicXP,
         StaticModel = Magazine,
-        WorldStaticModel = Magazine_Ground,
+        WorldStaticModel = BookLightBlue_Ground,
     }
 }
